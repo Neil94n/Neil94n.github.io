@@ -5,7 +5,7 @@ $(document).ready(function () {
     var bwol=document.body.offsetWidth;
     if(bwol < 975){
         $('aside#sidebar').css("display","none");
-        $('body').css("paddingLeft","0px");
+        $('body').css("paddingRight","0px");
     }
 }
 window.onresize = function(){
@@ -111,7 +111,7 @@ window.onresize = function(){
       $(document)
         .on('sidebar.isShowing', function () {
           NexT.utils.isDesktop() && $('body').velocity('stop').velocity(
-            {paddingLeft: SIDEBAR_WIDTH},
+            {paddingRight: SIDEBAR_WIDTH},
             SIDEBAR_DISPLAY_DURATION
           );
         })
