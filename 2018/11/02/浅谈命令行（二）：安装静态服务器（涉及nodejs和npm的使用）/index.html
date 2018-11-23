@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="git,">
+  <meta name="keywords" content="命令行,">
 
 
 
@@ -79,35 +79,20 @@
 
 
 
-<meta name="description" content="Git Bash 的安装与配置 Node.js 的安装与配置 Git 的安装与配置 VSCode 的安装与配置">
-<meta name="keywords" content="git">
+<meta name="description" content="掌握了终端的一些基本命令，可以做点什么呢？用命令行，可以安装一个静态服务器哦~关键词： Nodejs、npm、全局安装、http-server">
+<meta name="keywords" content="命令行">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一些软件的安装">
-<meta property="og:url" content="http://yoursite.com/2018/11/01/一些软件的安装与配置/index.html">
+<meta property="og:title" content="浅谈命令行（二）：安装静态服务器（涉及nodejs和npm的使用）">
+<meta property="og:url" content="http://yoursite.com/2018/11/02/浅谈命令行（二）：安装静态服务器（涉及nodejs和npm的使用）/index.html">
 <meta property="og:site_name" content="Neil&#39;s Blog">
-<meta property="og:description" content="Git Bash 的安装与配置 Node.js 的安装与配置 Git 的安装与配置 VSCode 的安装与配置">
+<meta property="og:description" content="掌握了终端的一些基本命令，可以做点什么呢？用命令行，可以安装一个静态服务器哦~关键词： Nodejs、npm、全局安装、http-server">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://jscode.me/uploads/default/original/1X/bc39461fc9f4187a18871c5d4970f32b0adfaca5.jpg">
-<meta property="og:image" content="https://jscode.me/uploads/default/original/1X/0cd62e9a327e410bb03c01b547f6ea3338f60bbf.jpg">
-<meta property="og:image" content="https://jscode.me/uploads/default/original/1X/eaf3227a1d1156cac7e8b16869a5dd834613a620.jpg">
-<meta property="og:image" content="https://jscode.me/uploads/default/original/1X/43caebd30d10c44b5229f5b00e321988f5715784.jpg">
-<meta property="og:image" content="https://jscode.me/uploads/default/original/1X/0c6c62d592a6c19b5a9d95c91a4d89c8c8c9b16d.jpg">
-<meta property="og:image" content="https://jscode.me/uploads/default/original/1X/d576a598c9c6164a2ce2eefe82781232a15805cd.jpg">
-<meta property="og:image" content="https://jscode.me/uploads/default/original/1X/5fe46b202e10af544d920925d4a5847c31a81191.jpg">
-<meta property="og:image" content="https://jscode.me/uploads/default/original/1X/32e071f4b3179f1262482fbc4eff321ca3d29f24.jpg">
-<meta property="og:image" content="https://jscode.me/uploads/default/original/2X/9/97da20950abae1f161d480b2bc8599a3b0a95f3e.jpg">
-<meta property="og:image" content="https://jscode.me/uploads/default/original/2X/5/5a63af363cb8e01b05283d31d827bf3163aca819.jpg">
-<meta property="og:image" content="https://jscode.me/uploads/default/original/2X/4/445f661f9841aa1855e06312b0788f9bd84e7fd6.jpg">
-<meta property="og:image" content="https://jscode.me/uploads/default/original/2X/f/f99beda047c9c97d82a7e64d36f9084d4110a3c9.jpg">
-<meta property="og:image" content="https://video.jirengu.com/xdml/image/3ac7c224-c23d-491f-84b5-4fabfbeab9b8/2018-5-27-1-20-38.png">
-<meta property="og:image" content="https://video.jirengu.com/FjQCNyOKpxFXPlDvhx3XdTHQzicy">
-<meta property="og:image" content="https://video.jirengu.com/FowXVYwXqNE0v2nnsSADpQHeq75T">
-<meta property="og:image" content="https://video.jirengu.com/xdml/image/3ac7c224-c23d-491f-84b5-4fabfbeab9b8/2018-10-26-22-48-39.png">
-<meta property="og:updated_time" content="2018-11-07T07:55:23.252Z">
+<meta property="og:image" content="https://i.loli.net/2018/11/23/5bf78d0c6b6c9.jpg">
+<meta property="og:updated_time" content="2018-11-23T05:26:03.917Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一些软件的安装">
-<meta name="twitter:description" content="Git Bash 的安装与配置 Node.js 的安装与配置 Git 的安装与配置 VSCode 的安装与配置">
-<meta name="twitter:image" content="https://jscode.me/uploads/default/original/1X/bc39461fc9f4187a18871c5d4970f32b0adfaca5.jpg">
+<meta name="twitter:title" content="浅谈命令行（二）：安装静态服务器（涉及nodejs和npm的使用）">
+<meta name="twitter:description" content="掌握了终端的一些基本命令，可以做点什么呢？用命令行，可以安装一个静态服务器哦~关键词： Nodejs、npm、全局安装、http-server">
+<meta name="twitter:image" content="https://i.loli.net/2018/11/23/5bf78d0c6b6c9.jpg">
 
 
 
@@ -137,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/01/一些软件的安装与配置/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/02/浅谈命令行（二）：安装静态服务器（涉及nodejs和npm的使用）/">
 
 
 
 
 
-  <title>一些软件的安装 | Neil's Blog</title>
+  <title>浅谈命令行（二）：安装静态服务器（涉及nodejs和npm的使用） | Neil's Blog</title>
   
 
 
@@ -313,7 +298,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/01/一些软件的安装与配置/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/02/浅谈命令行（二）：安装静态服务器（涉及nodejs和npm的使用）/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Neil Ni">
@@ -330,7 +315,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">一些软件的安装</h1>
+          <h1 class="post-title" itemprop="name headline">浅谈命令行（二）：安装静态服务器（涉及nodejs和npm的使用）</h1>
         
 
         <div class="post-meta">
@@ -342,8 +327,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-01T09:13:53+08:00">
-                2018-11-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-02T09:50:06+08:00">
+                2018-11-02
               </time>
             
 
@@ -365,8 +350,19 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/工具/" itemprop="url" rel="index">
-                    <span itemprop="name">工具</span>
+                  <a href="/categories/基础知识/" itemprop="url" rel="index">
+                    <span itemprop="name">基础知识</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/基础知识/命令行/" itemprop="url" rel="index">
+                    <span itemprop="name">命令行</span>
                   </a>
                 </span>
 
@@ -396,7 +392,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.7k
+                  681
                 </span>
               
 
@@ -412,7 +408,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6
+                  2
                 </span>
               
             </div>
@@ -433,129 +429,38 @@
       
 
       
-        <ul>
-<li>Git Bash 的安装与配置</li>
-<li>Node.js 的安装与配置</li>
-<li>Git 的安装与配置</li>
-<li>VSCode 的安装与配置</li>
-</ul>
-<a id="more"></a>
-<h3 id="Git-Bash-的安装与配置"><a href="#Git-Bash-的安装与配置" class="headerlink" title="Git Bash 的安装与配置"></a>Git Bash 的安装与配置</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ol>
-<li>从官网下载（算了，太慢了）</li>
-<li>百度网盘：链接: <a href="https://pan.baidu.com/s/1nu99KWp" target="_blank" rel="noopener">https://pan.baidu.com/s/1nu99KWp</a> 密码: jfdf</li>
-</ol>
-<p>双击安装，注意每一步的选项要参考下面的图（如果没有对应的图，就直接下一步）</p>
-<p><img src="https://jscode.me/uploads/default/original/1X/bc39461fc9f4187a18871c5d4970f32b0adfaca5.jpg" alt="img"></p>
-<p><img src="https://jscode.me/uploads/default/original/1X/0cd62e9a327e410bb03c01b547f6ea3338f60bbf.jpg" alt="img"></p>
-<p>下面的路径可以随便填：</p>
-<p><img src="https://jscode.me/uploads/default/original/1X/eaf3227a1d1156cac7e8b16869a5dd834613a620.jpg" alt="img"></p>
-<p><img src="https://jscode.me/uploads/default/original/1X/43caebd30d10c44b5229f5b00e321988f5715784.jpg" alt="img"></p>
-<p><img src="https://jscode.me/uploads/default/original/1X/0c6c62d592a6c19b5a9d95c91a4d89c8c8c9b16d.jpg" alt="img"></p>
-<p><img src="https://jscode.me/uploads/default/original/1X/d576a598c9c6164a2ce2eefe82781232a15805cd.jpg" alt="img"></p>
-<p><img src="https://jscode.me/uploads/default/original/1X/5fe46b202e10af544d920925d4a5847c31a81191.jpg" alt="img"></p>
-<p><img src="https://jscode.me/uploads/default/original/1X/32e071f4b3179f1262482fbc4eff321ca3d29f24.jpg" alt="img"></p>
-<p>好了，安装完成。</p>
-<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>安装成功之后，需要设置一下外观：</p>
-<p><img src="https://jscode.me/uploads/default/original/2X/9/97da20950abae1f161d480b2bc8599a3b0a95f3e.jpg" alt="img"></p>
-<p><img src="https://jscode.me/uploads/default/original/2X/5/5a63af363cb8e01b05283d31d827bf3163aca819.jpg" alt="img"></p>
-<p><img src="https://jscode.me/uploads/default/original/2X/4/445f661f9841aa1855e06312b0788f9bd84e7fd6.jpg" alt="img"></p>
-<p><img src="https://jscode.me/uploads/default/original/2X/f/f99beda047c9c97d82a7e64d36f9084d4110a3c9.jpg" alt="img"></p>
-<p>关闭重启 Git Bash 即可。</p>
-<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><h5 id="第一种使用方式"><a href="#第一种使用方式" class="headerlink" title="第一种使用方式"></a>第一种使用方式</h5><p>找一个目录，在目录上右键点击，然后选中「Git Bash Here」，即可用 Git Bash 打开这个目录。</p>
-<p>试试输入 <code>touch 1.txt</code>，回车后看看目录里是不是多了一个文件。</p>
-<h5 id="第二种使用方式"><a href="#第二种使用方式" class="headerlink" title="第二种使用方式"></a>第二种使用方式</h5><p>直接打开 Git Bash，输入 <code>cd ~/Desktop</code> 即可来到桌面所在的目录。</p>
-<p>试试输入 <code>touch 1.txt</code>，回车后看看桌面上是不是多了一个文件。</p>
-<h5 id="更多命令"><a href="#更多命令" class="headerlink" title="更多命令"></a>更多命令</h5><p>下节课我们会专门学习命令行，你可以试试下面几个简单的命令：</p>
+        <p>掌握了终端的一些基本命令，可以做点什么呢？用命令行，可以安装一个静态服务器哦~<br><strong>关键词：</strong> Nodejs、npm、全局安装、http-server</p>
+<hr>
+ <a id="more"></a>
+<h1 id="一、安装Nodejs"><a href="#一、安装Nodejs" class="headerlink" title="一、安装Nodejs"></a>一、安装Nodejs</h1><h3 id="1、什么是Nodejs"><a href="#1、什么是Nodejs" class="headerlink" title="1、什么是Nodejs"></a>1、什么是Nodejs</h3><p>Node.js 是一个让 JavaScript 运行在服务端的开发平台。（不懂就算了，不用太在意，反正应该是帮助js更友好地去开发的一个开发平台。。。啊吧）</p>
+<h3 id="2、下载链接：-nodejs"><a href="#2、下载链接：-nodejs" class="headerlink" title="2、下载链接： nodejs"></a>2、下载链接： <a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">nodejs</a></h3><p><strong>注：</strong> nodejs下载完后，你将不会看到它像其他软件那样出现在桌面，需要用命令行去调用它。</p>
+<h3 id="3、验证是否安装成功"><a href="#3、验证是否安装成功" class="headerlink" title="3、验证是否安装成功"></a>3、验证是否安装成功</h3><p>此时，可以开启终端，用命令行验证：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ node --version</span><br></pre></td></tr></table></figure>
+<p><strong>如图：</strong><br><img src="https://i.loli.net/2018/11/23/5bf78d0c6b6c9.jpg" alt="QQ图片20181123131442.jpg"></p>
+<h1 id="二、使用npm安装一个静态服务器"><a href="#二、使用npm安装一个静态服务器" class="headerlink" title="二、使用npm安装一个静态服务器"></a>二、使用npm安装一个静态服务器</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g http-server</span><br></pre></td></tr></table></figure>
+<h3 id="1、npm是什么"><a href="#1、npm是什么" class="headerlink" title="1、npm是什么"></a>1、npm是什么</h3><p>npm是一个node包管理和分发工具，已经成为了非官方的发布node模块（包）的标准。有了npm，可以很快的找到特定服务要使用的包，进行下载、安装以及管理已经安装的包。新版的nodejs已经集成了npm，所以之前npm也一并安装好了。</p>
+<h3 id="2、npm的作用"><a href="#2、npm的作用" class="headerlink" title="2、npm的作用"></a>2、npm的作用</h3><p>npm是随同Nodejs一起安装的包管理工具，能解决Nodejs代码部署上的很多问题。</p>
+<h3 id="3、再次打开终端"><a href="#3、再次打开终端" class="headerlink" title="3、再次打开终端"></a>3、再次打开终端</h3><p><strong>操作以下步骤：</strong><br>（1）开启npm</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm</span><br></pre></td></tr></table></figure>
+<p>（2）用npm安装http-sever</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g http-server</span><br></pre></td></tr></table></figure>
+<p><strong>结论：</strong> http-server被安装成功，可以开启一个静态服务器<br><strong>注：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-g</span><br></pre></td></tr></table></figure>
+<p>为全局安装模式，去掉-g之后就是本地模式，如果出错就可以试一下本地模式</p>
+<p><strong>题外话：</strong> 关于本地模式和全局模式的问题，这里就不展开讲了，比较菜不耽误别人。需要的可以看一下这两篇文章：</p>
 <ul>
-<li>创建目录：<code>mkdir my-dir</code></li>
-<li>删除目录：<code>rm -r my-dir</code></li>
-<li>创建文件：<code>echo &quot;hello&quot; &gt; newFile.txt</code></li>
-<li>删除文件：<code>rm newFile.txt</code></li>
+<li><a href="http://blog.csdn.net/edagarli/article/details/23958435" target="_blank" rel="noopener">nodejs本地模式和全局模式</a></li>
+<li><a href="http://jin541223.blog.163.com/blog/static/1637398052012111122751840/" target="_blank" rel="noopener">node.js 本地模式与全局模式的区别</a></li>
 </ul>
-<h5 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h5><p><a href="https://jingyan.baidu.com/article/1876c8529390eb890b1376b6.html" target="_blank" rel="noopener">解决git bash无法复制和黏贴</a></p>
-<h3 id="Node-js-的安装与配置"><a href="#Node-js-的安装与配置" class="headerlink" title="Node.js 的安装与配置"></a>Node.js 的安装与配置</h3><ol>
-<li>从<a href="https://nodejs.org/" target="_blank" rel="noopener">官网</a>下载安装包</li>
-<li>百度网盘下载：链接: <a href="https://pan.baidu.com/s/1cMxJcU" target="_blank" rel="noopener">https://pan.baidu.com/s/1cMxJcU</a> 密码: xfyj</li>
-</ol>
-<p>安装了之后</p>
-<ul>
-<li><strong>千万别</strong> 点击 Node.js 的图标</li>
-<li><strong>千万别</strong> 点击 Node.js 的图标</li>
-<li><strong>千万别</strong> 点击 Node.js 的图标</li>
-</ul>
-<p>别问为什么，别点就是了。</p>
-<h4 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h4><p>打开 Git Bash，依次输入以下命令，按回车：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org/</span><br><span class="line">npm config set loglevel http</span><br><span class="line">npm config set progress false</span><br></pre></td></tr></table></figure>
-<p>npm 的配置被存储在 <code>~/.npmrc</code>，你可以随时改。</p>
-<h4 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h4><h5 id="npm-安装命令行小工具"><a href="#npm-安装命令行小工具" class="headerlink" title="npm 安装命令行小工具"></a>npm 安装命令行小工具</h5><p>装了 Node.js 之后我们就可以在 Git Bash 里面使用 node 和 npm 这两个命令了，试试看：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">which node</span><br><span class="line">which npm</span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<p>依次输出看看你得到什么结果。</p>
-<p>接下来跟大家展示一下 npm 的威力。我们可以用 npm 的翻译工具做一个随时可用的小字典，这个小工具的名字叫做 fanyi。</p>
-<p>运行 <code>npm i -g fanyi</code> 即可安装 fanyi，安装完成之后，输入 <code>fanyi frontend</code> 就可以看到对应的中文释义了！</p>
-<p>是不是很帅呢？！</p>
-<h5 id="node-的使用"><a href="#node-的使用" class="headerlink" title="node 的使用"></a>node 的使用</h5><ol>
-<li>进入 Git Bash</li>
-<li>输入 <code>node</code>，回车，就可以进入 node 运行环境，这个时候我们就可以写 JS 了</li>
-<li>试试写最简单的 JS 语句，比如 <code>1+2</code>，回车</li>
-<li><code>2 * 8</code>，回车</li>
-</ol>
-<p>这就是 node 的第一种使用方式</p>
-<h5 id="node-的另一种使用方式"><a href="#node-的另一种使用方式" class="headerlink" title="node 的另一种使用方式"></a>node 的另一种使用方式</h5><p>我们可以先创建一个 JS 文件，然后让 node 运行</p>
-<ol>
-<li>来到桌面：<code>cd ~/Desktop</code></li>
-<li>新建一个目录用来玩耍：<code>mkdir hello-node</code></li>
-<li>进入这个目录：<code>cd hello-node</code></li>
-<li>新建一个有内容的 JS 文件：<code>echo &quot;console.log(&#39;Hi, Node.js&#39;)&quot; &gt; main.js</code>，那么 main.js 就新建成功了</li>
-<li>输入 <code>node main.js</code>，回车，node 就会执行这个 main.js 文件，你会看到「Hi, Node.js」字样</li>
-<li>玩完了，删除 hello-node：<code>cd .. ; rm -rf hello-node</code></li>
-</ol>
-<h3 id="Git-的安装与配置"><a href="#Git-的安装与配置" class="headerlink" title="Git 的安装与配置"></a>Git 的安装与配置</h3><h4 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h4><p>不需要安装，Git Bash 内置了 Git 命令，Git Bash 还内置了以下命令：</p>
-<ul>
-<li>ls</li>
-<li>mkdir</li>
-<li>cp</li>
-<li>mv</li>
-</ul>
-<p>等等，大概有几十个命令，Git Bash 其实是一个 Bash，不是 Git。</p>
-<p>Git Bash 给我们提供了一个虚拟的 Linux 环境，这样我们就不用忍受 Windows 里面垃圾一般的命令行体验了。</p>
-<h4 id="配置-2"><a href="#配置-2" class="headerlink" title="配置"></a>配置</h4><p>请在命令行运行这五句话！！！一定要运行这五句话，不然 git 就不能用了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name 你的英文名字                                      #方便产品经理找（怼）你</span><br><span class="line">git config --global user.email 你的常用邮箱                                      #方便产品经理找（怼）你</span><br><span class="line">git config --global push.default simple                                             # 本来我写的是 matching，不过想了想可能 simple 更好</span><br><span class="line">git config --global core.quotepath false                                           #防止文件名变成数字</span><br><span class="line">git config --global core.editor &quot;vim&quot;                                                   # 使用vim编辑提交信息</span><br></pre></td></tr></table></figure>
-<p>另外很重要的一点！你自己运行 git 的时候注意一下：git remote add origin 后面的地址，不允许使用 https 开头的地址，见下图</p>
-<p><img src="https://video.jirengu.com/xdml/image/3ac7c224-c23d-491f-84b5-4fabfbeab9b8/2018-5-27-1-20-38.png" alt="记得点击 SSH">记得点击 SSH</p>
-<h3 id="VSCode-的安装与配置"><a href="#VSCode-的安装与配置" class="headerlink" title="VSCode 的安装与配置"></a>VSCode 的安装与配置</h3><p>从<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">官网下载</a>安装包</p>
-<p>安装时把以下选项选中：</p>
-<p><img src="https://video.jirengu.com/FjQCNyOKpxFXPlDvhx3XdTHQzicy" alt="图片">图片</p>
-<h4 id="使用-2"><a href="#使用-2" class="headerlink" title="使用"></a>使用</h4><ol>
-<li>找个地方新建一个目录（目录名不要中文），假设目录名为 vs-demo</li>
-<li>右键点击该目录，open with code</li>
-<li>使用 Ctrl+Shift+E 打开资源管理器，在 vs-demo 目录里新建 HTML 文件，文件名为 index.html</li>
-<li>在 index.html 依次输入：英文感叹号、<kbd>回车</kbd> 键，即可看到一个完整的 HTML 页面<ul>
-<li>由于 vscode 时常更新，如果 <kbd>回车</kbd> 键不行，就试试 <kbd>Tab</kbd> 键</li>
-</ul>
-</li>
-</ol>
-<p>这种快捷写法叫做 Emmet，目前所有的前端编辑器都支持 Emmet。换句话说，如果一个编辑器没有默认支持 Emmet，你就可以卸载这款编辑器了（比如 Sublime Text 括弧笑）。</p>
-<p>关于 Emmet 的更多快捷写法，见：</p>
-<ol>
-<li><a href="https://docs.emmet.io/" target="_blank" rel="noopener">官网的视频介绍</a></li>
-<li><a href="https://docs.emmet.io/cheat-sheet/" target="_blank" rel="noopener">Emmet 作弊表</a></li>
-</ol>
-<h4 id="配置-3"><a href="#配置-3" class="headerlink" title="配置"></a>配置</h4><p>VSCode 的配置方式就写编辑一个配置文件，打开「文件 - 首选项 - 设置」，对应快捷键为 <kbd>Ctrl</kbd> + <kbd>,</kbd></p>
-<p><img src="https://video.jirengu.com/FowXVYwXqNE0v2nnsSADpQHeq75T" alt="图片">图片</p>
-<p>左侧为系统默认配置项，右侧为你要覆盖的配置项。把你要修改的项从左边拷贝到右边，然后保存，即可生效。</p>
-<h4 id="设置字体与字号"><a href="#设置字体与字号" class="headerlink" title="设置字体与字号"></a>设置字体与字号</h4><p>在右侧文件中添加一行（注意末尾要有英文逗号）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;editor.fontSize&quot;: 18,</span><br></pre></td></tr></table></figure>
-<p>保存，字号就变大了。</p>
-<p>设置字体也是类似，添加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;editor.fontFamily&quot;: &quot;Consolas, &apos;Courier New&apos;, monospace&quot;,</span><br></pre></td></tr></table></figure>
-<p>即可将字体设置为你想要的。这里推荐「<a href="http://www.iplaysoft.com/top10-programming-fonts.html" target="_blank" rel="noopener">10大最适合编程的字体推荐下载</a>」，够你玩一上午了。我用的编程字体一般是 Source Code Pro 和 M Plus 这两款。</p>
-<p>其实 VSCode 默认的配置就挺好的。</p>
-<h4 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h4><p>VSCode 自带 Emmet、Git 继承和 JS 调试功能（后续会讲到），已经十分完善了，但是还是有一些特殊的需求，这个时候我们就可以安装第三方插件了。由于第三方插件不是微软生产的，所以质量良莠不齐，请注意甄别。</p>
-<p>如果你发现 VSCode 没有 Git 功能：</p>
-<p><img src="https://video.jirengu.com/xdml/image/3ac7c224-c23d-491f-84b5-4fabfbeab9b8/2018-10-26-22-48-39.png" alt="截图">截图</p>
-<p>那么你只需要在项目目录运行 git init 来激活 git 功能即可。</p>
-<h4 id="安装-open-in-browser"><a href="#安装-open-in-browser" class="headerlink" title="安装 open in browser"></a>安装 open in browser</h4><p>按 Ctrl + Shift + X 打开扩展面板，然后输入 open in browser，点击第一个结果的「安装」按钮，稍等片刻就安装好了（相比之下 Sublime 的插件安装体验就差很多）。</p>
-<p>然后你在任意 HTML 文件右键，就可以看到 Open In Default Browser 这个按钮了，点就试试看。</p>
+<p><strong>划重点：</strong> 有些人的电脑如果提示错误（我的就是这样?），不要抓狂，试一下是否需要管理员权限：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g http-server</span><br></pre></td></tr></table></figure>
+<p>windows不需要管这个</p>
+<p>（3）开启http-server（这个是一个服务器哦）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$  http-server</span><br></pre></td></tr></table></figure>
+<p>（4）尝试启动http-server在浏览器打开你的本地文件<br>在命令行假设在桌面（desktop）操作一个名为code文件夹中的from.html文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ls</span><br><span class="line">$ cd code</span><br><span class="line">$ http-server</span><br></pre></td></tr></table></figure>
+<p>此时，将会出现服务器的url，复制下来在浏览器中打开，在code目录下启动这个静态服务器，用新的url来展示code文件夹下所相对应的html文件夹。<br><strong>结论</strong>：这种方式，就不是我们用本地的方式打开html文件</p>
+<p>（5）退出http-server<br>在终端上Ctrl+c，便会退出http-server</p>
 
       
     </div>
@@ -572,12 +477,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/11/01/一些软件的安装与配置/">一些软件的安装</a></p>
+  <p><span>本文标题:</span><a href="/2018/11/02/浅谈命令行（二）：安装静态服务器（涉及nodejs和npm的使用）/">浅谈命令行（二）：安装静态服务器（涉及nodejs和npm的使用）</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Neil Ni 的个人博客">Neil Ni</a></p>
-  <p><span>发布时间:</span>2018年11月01日 - 09:13</p>
-  <p><span>最后更新:</span>2018年11月07日 - 15:55</p>
-  <p><span>原始链接:</span><a href="/2018/11/01/一些软件的安装与配置/" title="一些软件的安装">http://yoursite.com/2018/11/01/一些软件的安装与配置/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/11/01/一些软件的安装与配置/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2018年11月02日 - 09:50</p>
+  <p><span>最后更新:</span>2018年11月23日 - 13:26</p>
+  <p><span>原始链接:</span><a href="/2018/11/02/浅谈命令行（二）：安装静态服务器（涉及nodejs和npm的使用）/" title="浅谈命令行（二）：安装静态服务器（涉及nodejs和npm的使用）">http://yoursite.com/2018/11/02/浅谈命令行（二）：安装静态服务器（涉及nodejs和npm的使用）/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/11/02/浅谈命令行（二）：安装静态服务器（涉及nodejs和npm的使用）/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -618,7 +523,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
+            <a href="/tags/命令行/" rel="tag"><i class="fa fa-tag"></i> 命令行</a>
           
         </div>
       
@@ -631,8 +536,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/30/HTTP入门/" rel="next" title="HTTP入门">
-                <i class="fa fa-chevron-left"></i> HTTP入门
+              <a href="/2018/11/02/浅谈命令行（一）：命令行基本操作（包括vim在终端的基本操作）/" rel="next" title="浅谈命令行（一）：命令行基本操作（包括vim在终端的基本操作）">
+                <i class="fa fa-chevron-left"></i> 浅谈命令行（一）：命令行基本操作（包括vim在终端的基本操作）
               </a>
             
           </div>
@@ -641,8 +546,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/11/01/Hexo-Github博客教程：01基本操作/" rel="prev" title="Hexo+Github博客教程：01基本操作">
-                Hexo+Github博客教程：01基本操作 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/11/02/浅谈命令行（三）：好玩的命令行操作（有好玩再补充）/" rel="prev" title="浅谈命令行（三）：好玩的命令行操作">
+                浅谈命令行（三）：好玩的命令行操作 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
