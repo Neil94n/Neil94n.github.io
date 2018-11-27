@@ -79,19 +79,19 @@
 
 
 
-<meta name="description" content="排序算法入门(三) 计数排序，桶排序计数排序：原理：与比较排序注重于元素之间的比较不同，计数排序专注于找准自己的位置，而不关心自己比谁小，比谁大。其核心在于，对于任意一个属于数组array的元素number，统计其在array内出现的次数，将其以键值对的形式保存在hash，如果hash没有number，使hash[nmber] = 1,并且与max做对比是否需要重置max（max是hash的最大键">
+<meta name="description" content="计数排序：原理：与比较排序注重于元素之间的比较不同，计数排序专注于找准自己的位置，而不关心自己比谁小，比谁大。其核心在于，对于任意一个属于数组array的元素number，统计其在array内出现的次数，将其以键值对的形式保存在hash，如果hash没有number，使hash[nmber] = 1,并且与max做对比是否需要重置max（max是hash的最大键，也可以理解为共有多少的桶。。），否">
 <meta name="keywords" content="算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="排序算法入门(三) 计数排序，桶排序">
 <meta property="og:url" content="http://yoursite.com/2018/11/17/排序算法入门（三）计数排序，桶排序/index.html">
 <meta property="og:site_name" content="Neil&#39;s Blog">
-<meta property="og:description" content="排序算法入门(三) 计数排序，桶排序计数排序：原理：与比较排序注重于元素之间的比较不同，计数排序专注于找准自己的位置，而不关心自己比谁小，比谁大。其核心在于，对于任意一个属于数组array的元素number，统计其在array内出现的次数，将其以键值对的形式保存在hash，如果hash没有number，使hash[nmber] = 1,并且与max做对比是否需要重置max（max是hash的最大键">
+<meta property="og:description" content="计数排序：原理：与比较排序注重于元素之间的比较不同，计数排序专注于找准自己的位置，而不关心自己比谁小，比谁大。其核心在于，对于任意一个属于数组array的元素number，统计其在array内出现的次数，将其以键值对的形式保存在hash，如果hash没有number，使hash[nmber] = 1,并且与max做对比是否需要重置max（max是hash的最大键，也可以理解为共有多少的桶。。），否">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2018/11/26/5bfbf75b86f44.jpg">
-<meta property="og:updated_time" content="2018-11-27T13:48:17.108Z">
+<meta property="og:updated_time" content="2018-11-27T13:57:19.746Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="排序算法入门(三) 计数排序，桶排序">
-<meta name="twitter:description" content="排序算法入门(三) 计数排序，桶排序计数排序：原理：与比较排序注重于元素之间的比较不同，计数排序专注于找准自己的位置，而不关心自己比谁小，比谁大。其核心在于，对于任意一个属于数组array的元素number，统计其在array内出现的次数，将其以键值对的形式保存在hash，如果hash没有number，使hash[nmber] = 1,并且与max做对比是否需要重置max（max是hash的最大键">
+<meta name="twitter:description" content="计数排序：原理：与比较排序注重于元素之间的比较不同，计数排序专注于找准自己的位置，而不关心自己比谁小，比谁大。其核心在于，对于任意一个属于数组array的元素number，统计其在array内出现的次数，将其以键值对的形式保存在hash，如果hash没有number，使hash[nmber] = 1,并且与max做对比是否需要重置max（max是hash的最大键，也可以理解为共有多少的桶。。），否">
 <meta name="twitter:image" content="https://i.loli.net/2018/11/26/5bfbf75b86f44.jpg">
 
 
@@ -429,7 +429,7 @@
       
 
       
-        <h1 id="排序算法入门-三-计数排序，桶排序"><a href="#排序算法入门-三-计数排序，桶排序" class="headerlink" title="排序算法入门(三) 计数排序，桶排序"></a>排序算法入门(三) 计数排序，桶排序</h1><h2 id="计数排序："><a href="#计数排序：" class="headerlink" title="计数排序："></a><strong>计数排序</strong>：</h2><p>原理：与比较排序注重于元素之间的比较不同，计数排序专注于找准自己的位置，而不关心自己比谁小，比谁大。其核心在于，对于任意一个属于数组array的元素number，统计其在array内出现的次数，将其以键值对的形式保存在hash，如果hash没有number，使hash[nmber] = 1,并且与max做对比是否需要重置max（max是hash的最大键，也可以理解为共有多少的桶。。），否则hash[number]++,形成hash后，将其按顺序push到新数组newArr。<br><a id="more"></a></p>
+        <h2 id="计数排序："><a href="#计数排序：" class="headerlink" title="计数排序："></a><strong>计数排序</strong>：</h2><p>原理：与比较排序注重于元素之间的比较不同，计数排序专注于找准自己的位置，而不关心自己比谁小，比谁大。其核心在于，对于任意一个属于数组array的元素number，统计其在array内出现的次数，将其以键值对的形式保存在hash，如果hash没有number，使hash[nmber] = 1,并且与max做对比是否需要重置max（max是hash的最大键，也可以理解为共有多少的桶。。），否则hash[number]++,形成hash后，将其按顺序push到新数组newArr。<br><a id="more"></a></p>
 <blockquote>
 <p>计数排序可视化：<a href="http://link.zhihu.com/?target=https%3A//visualgo.net/zh/sorting" target="_blank" rel="noopener">https://visualgo.net/zh/sorting</a> 点击COU</p>
 </blockquote>
@@ -474,7 +474,7 @@
   <p><span>本文标题:</span><a href="/2018/11/17/排序算法入门（三）计数排序，桶排序/">排序算法入门(三) 计数排序，桶排序</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Neil Ni 的个人博客">Neil Ni</a></p>
   <p><span>发布时间:</span>2018年11月17日 - 22:36</p>
-  <p><span>最后更新:</span>2018年11月27日 - 21:48</p>
+  <p><span>最后更新:</span>2018年11月27日 - 21:57</p>
   <p><span>原始链接:</span><a href="/2018/11/17/排序算法入门（三）计数排序，桶排序/" title="排序算法入门(三) 计数排序，桶排序">http://yoursite.com/2018/11/17/排序算法入门（三）计数排序，桶排序/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/11/17/排序算法入门（三）计数排序，桶排序/" aria-label="复制成功！"></i></span>
   </p>
@@ -769,7 +769,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">43.9k</span>
+    <span title="Site words total count">43.8k</span>
   
 </div>
 <!--
@@ -795,7 +795,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共43.9k字</span>
+  <span class="post-count">博客全站共43.8k字</span>
 </div>
 
         
