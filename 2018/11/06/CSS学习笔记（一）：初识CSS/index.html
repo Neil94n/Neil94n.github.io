@@ -106,7 +106,7 @@
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/8/14/1653790a6fe91353?w=600&h=332&f=jpeg&s=38863">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/8/14/1653790a72e4d4aa?w=600&h=266&f=jpeg&s=33688">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/8/14/165379d14ae8981b?w=600&h=275&f=jpeg&s=27501">
-<meta property="og:updated_time" content="2018-11-26T11:45:21.344Z">
+<meta property="og:updated_time" content="2018-11-26T12:29:20.095Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS学习笔记（一）:初识CSS">
 <meta name="twitter:description" content="前言刚接触css的时候，总觉得一个元素对应着它相应的属性，并且与对应的html文件结合，大概就能出现你想要的漂亮页面把。但在CSS身上，“事与愿违”简直就是新手对它的代名词。 在css的世界里，不管是前端老司机，还是资质尚浅的前端小白，都一定会犯“只知其一不知其二”这样的错误。因此，CSS也常被戏称为“不是科学，是艺术”。">
@@ -484,7 +484,6 @@
 <p>（4）属性样式（废弃）<br>如：<code>&lt;img src=&quot;a.png&quot; width=100 height=200&gt;</code></p>
 <h1 id="三、css选择器"><a href="#三、css选择器" class="headerlink" title="三、css选择器"></a>三、css选择器</h1><h3 id="1、选择器类型"><a href="#1、选择器类型" class="headerlink" title="1、选择器类型"></a>1、选择器类型</h3><p>A、基础选择器<br>（1）<code>*</code>：通用元素选择器，匹配页面任何元素（比较少用）<br>（2）<code>#id</code>：id选择器，匹配特定id的元素<br>（3）<code>.class</code>：类选择器，匹配class包含（不是等于）特定类的元素<br>（4）<code>element</code>：标签选择器</p>
 <p>B、组合选择器<br>（1）<code>E,F</code><br>多元选择器，相当于并列选择器。用<code>,</code> 分隔，同时匹配元素E或者元素F<br>（2）<code>E F</code><br>后代选择器。用空格分隔，匹配E元素所有的后代（不只是子元素，子元素向下递归），元素F<br>（3）<code>E&gt;F</code><br>子元素选择器。用 &gt; 分隔，匹配E元素的所有直接子元素（再嵌套的子元素就没有用）<br>（4）<code>E+F</code><br>直接相邻选择器。匹配E元素之后的相邻的同级元素F<br>（5）<code>E~F</code><br>普通相邻选择器（弟弟选择器），匹配E元素之后的同级元素F （无论直接相邻与否）<br>（6）<code>.class1.class2</code> （既、又）id和class选择器和选择器连写的时候中间没有分隔符，<code>.</code>和<code>#</code>本身充当分隔符的元素<br>（7）<code>element#id</code><br>id和class选择器和选择器连写的时候中间没有分隔符，<code>.</code>和<code>#</code>本身充当分隔符的元素<br>C、属性选择器<br>D、伪类选择器<br>E、伪元素选择器</p>
-<p><strong>关于这两类详情请看：</strong> <a href="https://zhuanlan.zhihu.com/p/36502282/edit" target="_blank" rel="noopener">miya Wang：#07你认真学了css？（基本样式7：伪类和伪元素</a></p>
 <h3 id="2、基础选择器"><a href="#2、基础选择器" class="headerlink" title="2、基础选择器"></a>2、基础选择器</h3><p>（1）<code>*</code> ：<br>通用元素选择器，匹配页面任何元素（比较少用）<br>（2）<code>#id</code>：<br>id选择器，匹配特定id的元素<br>（3）<code>.class</code>：<br>类选择器，匹配class包含（不是等于）特定类的元素<br>（4）<code>element</code>：<br>标签选择器</p>
 <p><strong>演示图：</strong><a href="https://user-gold-cdn.xitu.io/2018/8/14/1653790a21476588?w=600&amp;h=245&amp;f=jpeg&amp;s=23886" target="_blank" rel="noopener"><img src="https://user-gold-cdn.xitu.io/2018/8/14/1653790a21476588?w=600&amp;h=245&amp;f=jpeg&amp;s=23886" alt="image"></a></p>
 <h3 id="3、组合选择器"><a href="#3、组合选择器" class="headerlink" title="3、组合选择器"></a>3、组合选择器</h3><p>（1）<code>E,F</code><br>多元选择器，相当于并列选择器。用<code>,</code>分隔，同时匹配元素E或者元素F<br><a href="https://user-gold-cdn.xitu.io/2018/8/14/1653790a215714d8?w=600&amp;h=259&amp;f=jpeg&amp;s=19895" target="_blank" rel="noopener"><img src="https://user-gold-cdn.xitu.io/2018/8/14/1653790a215714d8?w=600&amp;h=259&amp;f=jpeg&amp;s=19895" alt="image"></a><br>（2）<code>E F</code><br>后代选择器。选择它所有的后代子元素。用空格分隔，匹配E元素所有的后代（不只是子元素，子元素向下递归），元素F<br><a href="https://user-gold-cdn.xitu.io/2018/8/14/1653790a222fbe25?w=600&amp;h=252&amp;f=jpeg&amp;s=21958" target="_blank" rel="noopener"><img src="https://user-gold-cdn.xitu.io/2018/8/14/1653790a222fbe25?w=600&amp;h=252&amp;f=jpeg&amp;s=21958" alt="image"></a><br>（3）<code>E&gt;F</code><br>子元素选择器。（普遍）选择它第一子元素，对再嵌套的子元素没用。用<code>&gt;</code>分隔，匹配E元素的所有直接子元素<br><a href="https://user-gold-cdn.xitu.io/2018/8/14/1653790a2581423c?w=600&amp;h=283&amp;f=jpeg&amp;s=27121" target="_blank" rel="noopener"><img src="https://user-gold-cdn.xitu.io/2018/8/14/1653790a2581423c?w=600&amp;h=283&amp;f=jpeg&amp;s=27121" alt="image"></a><br>（4）<code>E+F</code><br>直接相邻选择器。匹配E元素之后的相邻同级所有元素F<br><a href="https://user-gold-cdn.xitu.io/2018/8/14/1653790a25a876fc?w=600&amp;h=284&amp;f=jpeg&amp;s=27017" target="_blank" rel="noopener"><img src="https://user-gold-cdn.xitu.io/2018/8/14/1653790a25a876fc?w=600&amp;h=284&amp;f=jpeg&amp;s=27017" alt="image"></a><br>（5）<code>E~F</code><br>普通相邻选择器（弟弟选择器），匹配E元素之后的同级元素F （无论直接相邻与否）<br><a href="https://user-gold-cdn.xitu.io/2018/8/14/1653790a25b62ca8?w=600&amp;h=299&amp;f=jpeg&amp;s=29559" target="_blank" rel="noopener"><img src="https://user-gold-cdn.xitu.io/2018/8/14/1653790a25b62ca8?w=600&amp;h=299&amp;f=jpeg&amp;s=29559" alt="image"></a><br>（6）<code>.class1.class2</code> 既、又，直接靠在一起，同时拥有这两个类选择器特性的一个元素。id和class选择器和选择器连写的时候中间没有分隔符，<code>.</code>和<code>#</code>本身充当分隔符的元素<br><a href="https://user-gold-cdn.xitu.io/2018/8/14/1653790a43a35ff5?w=600&amp;h=313&amp;f=jpeg&amp;s=33006" target="_blank" rel="noopener"><img src="https://user-gold-cdn.xitu.io/2018/8/14/1653790a43a35ff5?w=600&amp;h=313&amp;f=jpeg&amp;s=33006" alt="image"></a><br>（7）<code>element#id</code><br>id和class选择器和选择器连写的时候中间没有分隔符，<code>.</code>和 <code>#</code>本身充当分隔符的元素</p>
@@ -652,7 +651,7 @@
   <p><span>本文标题:</span><a href="/2018/11/06/CSS学习笔记（一）：初识CSS/">CSS学习笔记（一）:初识CSS</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Neil Ni 的个人博客">Neil Ni</a></p>
   <p><span>发布时间:</span>2018年11月06日 - 10:20</p>
-  <p><span>最后更新:</span>2018年11月26日 - 19:45</p>
+  <p><span>最后更新:</span>2018年11月26日 - 20:29</p>
   <p><span>原始链接:</span><a href="/2018/11/06/CSS学习笔记（一）：初识CSS/" title="CSS学习笔记（一）:初识CSS">http://yoursite.com/2018/11/06/CSS学习笔记（一）：初识CSS/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/11/06/CSS学习笔记（一）：初识CSS/" aria-label="复制成功！"></i></span>
   </p>
@@ -816,7 +815,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -827,7 +826,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -838,7 +837,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -947,7 +946,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">39.5k</span>
+    <span title="Site words total count">43.9k</span>
   
 </div>
 <!--
@@ -973,7 +972,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共39.5k字</span>
+  <span class="post-count">博客全站共43.9k字</span>
 </div>
 
         
