@@ -92,7 +92,7 @@
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/8/15/1653ba0ef20c8b15?w=600&h=416&f=jpeg&s=12538">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/8/15/1653ba0ef2280c98?w=600&h=343&f=jpeg&s=4481">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/8/15/1653ba0ef1defbdc?w=600&h=344&f=jpeg&s=4959">
-<meta property="og:updated_time" content="2018-11-26T11:47:18.690Z">
+<meta property="og:updated_time" content="2018-11-29T14:12:34.360Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS学习笔记（六）：元素居中">
 <meta name="twitter:description" content="一、元素水平居中1、text-align实现水平居中text-align:center; 行内元素（图片或文字）居中在父元素上设置text-align: center 使文字/图片在整个页面上水平居中 123 .container&amp;#123;    text-align:center;&amp;#125;">
@@ -396,7 +396,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  843
+                  946
                 </span>
               
 
@@ -457,6 +457,10 @@
 <p><strong>情况2：</strong> 去掉宽高的块在浏览器窗口水平垂直居中，代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">html,body &#123;</span><br><span class="line">  height: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.dialog &#123;</span><br><span class="line">  position: absolute;</span><br><span class="line">  left: 50%;</span><br><span class="line">  top: 50%;</span><br><span class="line"> /*  margin-left: -200px;</span><br><span class="line">  margin-top: -150px; */</span><br><span class="line"></span><br><span class="line">  /*CSS3属性  相对于自己的偏移*/</span><br><span class="line">  transform:translate(-50%,-50%);</span><br><span class="line">  box-shadow: 0px 0px 3px #000;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.dialog .header&#123;</span><br><span class="line">  padding: 10px;</span><br><span class="line">  background: #000;</span><br><span class="line">  color: #fff;</span><br><span class="line">&#125;</span><br><span class="line">.dialog .content&#123;</span><br><span class="line">  padding: 10px;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">  &lt;div class=&quot;dialog&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;header&quot;&gt;我是标题&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;content&quot;&gt;我是内容&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;content&quot;&gt;我是内容&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;content&quot;&gt;我是内容&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;content&quot;&gt;我是内容&lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br></pre></td></tr></table></figure>
 <p><a href="https://user-gold-cdn.xitu.io/2018/8/15/1653ba0ef1defbdc?w=600&amp;h=344&amp;f=jpeg&amp;s=4959" target="_blank" rel="noopener"><img src="https://user-gold-cdn.xitu.io/2018/8/15/1653ba0ef1defbdc?w=600&amp;h=344&amp;f=jpeg&amp;s=4959" alt="image"></a></p>
+<h3 id="5、table自带功能实现垂直居中"><a href="#5、table自带功能实现垂直居中" class="headerlink" title="5、table自带功能实现垂直居中"></a>5、table自带功能实现垂直居中</h3><p>参考demo：<a href="http://js.jirengu.com/gaquk/2/edit?html,css" target="_blank" rel="noopener">table自带功能实现垂直居中</a></p>
+<h3 id="6、100-高度的-afrer-before-加上-inline-block实现垂直居中"><a href="#6、100-高度的-afrer-before-加上-inline-block实现垂直居中" class="headerlink" title="6、100% 高度的 afrer before 加上 inline block实现垂直居中"></a>6、100% 高度的 afrer before 加上 inline block实现垂直居中</h3><p>参考demo：<a href="http://js.jirengu.com/poveg/3/edit?html,css" target="_blank" rel="noopener">100% 高度的 afrer before 加上 inline block实现垂直居中</a></p>
+<h3 id="7、margin-top-50-实现垂直居中"><a href="#7、margin-top-50-实现垂直居中" class="headerlink" title="7、margin-top: -50%实现垂直居中"></a>7、margin-top: -50%实现垂直居中</h3><p>参考demo：<a href="http://js.jirengu.com/sugex/1/edit?html,css" target="_blank" rel="noopener">margin-top: -50%实现垂直居中</a></p>
+<h3 id="8、flex布局实现垂直居中"><a href="#8、flex布局实现垂直居中" class="headerlink" title="8、flex布局实现垂直居中"></a>8、flex布局实现垂直居中</h3><p>参考demo：<a href="http://js.jirengu.com/sugex/7/edit?html,css" target="_blank" rel="noopener">flex布局实现垂直居中</a></p>
 
       
     </div>
@@ -476,7 +480,7 @@
   <p><span>本文标题:</span><a href="/2018/11/11/CSS学习笔记（六）：元素居中/">CSS学习笔记（六）：元素居中</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Neil Ni 的个人博客">Neil Ni</a></p>
   <p><span>发布时间:</span>2018年11月11日 - 17:22</p>
-  <p><span>最后更新:</span>2018年11月26日 - 19:47</p>
+  <p><span>最后更新:</span>2018年11月29日 - 22:12</p>
   <p><span>原始链接:</span><a href="/2018/11/11/CSS学习笔记（六）：元素居中/" title="CSS学习笔记（六）：元素居中">http://yoursite.com/2018/11/11/CSS学习笔记（六）：元素居中/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/11/11/CSS学习笔记（六）：元素居中/" aria-label="复制成功！"></i></span>
   </p>
@@ -640,7 +644,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -651,7 +655,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -662,7 +666,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -771,7 +775,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">43.8k</span>
+    <span title="Site words total count">49.4k</span>
   
 </div>
 <!--
@@ -797,7 +801,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共43.8k字</span>
+  <span class="post-count">博客全站共49.4k字</span>
 </div>
 
         
