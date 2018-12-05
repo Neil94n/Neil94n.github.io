@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/yeqiu.jpg?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/yeqiu.jpg?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/yeqiu.jpg?v=5.1.4">
+
+
+
+
+
+
+  <meta name="keywords" content="html,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Neil's Blog" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="1.DOCTYPE有什么作用？标准模式与混杂模式如何区分？它们有何意义?（1）&amp;lt;!DOCTYPE&amp;gt; 声明位于文档中的最前面，处于  标签之前。告诉浏览器的解析器，用什么文档类型规范来解析这个文档。        （2）严格模式的排版和 JS 运作模式是以该浏览器支持的最高标准运行。">
+<meta name="keywords" content="html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML基础面试题（附答案）">
+<meta property="og:url" content="http://yoursite.com/2018/12/05/HTML基础面试题（附答案）/index.html">
+<meta property="og:site_name" content="Neil&#39;s Blog">
+<meta property="og:description" content="1.DOCTYPE有什么作用？标准模式与混杂模式如何区分？它们有何意义?（1）&amp;lt;!DOCTYPE&amp;gt; 声明位于文档中的最前面，处于  标签之前。告诉浏览器的解析器，用什么文档类型规范来解析这个文档。        （2）严格模式的排版和 JS 运作模式是以该浏览器支持的最高标准运行。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-12-05T13:25:11.562Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML基础面试题（附答案）">
+<meta name="twitter:description" content="1.DOCTYPE有什么作用？标准模式与混杂模式如何区分？它们有何意义?（1）&amp;lt;!DOCTYPE&amp;gt; 声明位于文档中的最前面，处于  标签之前。告诉浏览器的解析器，用什么文档类型规范来解析这个文档。        （2）严格模式的排版和 JS 运作模式是以该浏览器支持的最高标准运行。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/12/05/HTML基础面试题（附答案）/">
+
+
+
+
+
+  <title>HTML基础面试题（附答案） | Neil's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Neil's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">求知若饥 虚心似谷</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/05/HTML基础面试题（附答案）/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Neil Ni">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/yeqiu.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Neil's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTML基础面试题（附答案）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-05T11:51:15+08:00">
+                2018-12-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/面试题/" itemprop="url" rel="index">
+                    <span itemprop="name">面试题</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/面试题/html/" itemprop="url" rel="index">
+                    <span itemprop="name">html</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  5.5k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  20
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="1-DOCTYPE有什么作用？标准模式与混杂模式如何区分？它们有何意义"><a href="#1-DOCTYPE有什么作用？标准模式与混杂模式如何区分？它们有何意义" class="headerlink" title="1.DOCTYPE有什么作用？标准模式与混杂模式如何区分？它们有何意义?"></a>1.DOCTYPE有什么作用？标准模式与混杂模式如何区分？它们有何意义?</h3><p>（1）&lt;!DOCTYPE&gt; 声明位于文档中的最前面，处于 <html> 标签之前。告诉浏览器的解析器，用什么文档类型规范来解析这个文档。       </html></p>
+<p>（2）严格模式的排版和 JS 运作模式是以该浏览器支持的最高标准运行。<br><a id="more"></a><br>（3）在混杂模式中，页面以宽松的向后兼容的方式显示。模拟老式浏览器的行为以防止站点无法工作。      </p>
+<p>（4）DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现。</p>
+<p>（5）加入XMl声明可触发，解析方式更改为IE5.5 拥有IE5.5的bug</p>
+<h3 id="2-HTML5为什么只需要写-lt-DOCTYPE-HTML-gt-？"><a href="#2-HTML5为什么只需要写-lt-DOCTYPE-HTML-gt-？" class="headerlink" title="2.HTML5为什么只需要写 &lt;!DOCTYPE HTML&gt;？"></a>2.HTML5为什么只需要写 <code>&lt;!DOCTYPE HTML&gt;</code>？</h3><p>HTML5不基于SGML，因此不需要对DTD进行引用，但是需要DOCTYPE来规范浏览器的行为（让浏览器按照它们应该的方式来运行）；<br>HTML4.01基于SGML，所以需要对DTD进行引用，才能让浏览器知道该文档所使用的文档类型。</p>
+<h3 id="3-行内元素有哪些？块级元素有哪些？-空-void-元素有那些？CSS的盒模型"><a href="#3-行内元素有哪些？块级元素有哪些？-空-void-元素有那些？CSS的盒模型" class="headerlink" title="3.行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？CSS的盒模型?"></a>3.行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？CSS的盒模型?</h3><pre><code>声明：CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，如div的display默认值为“block”，则为“块级”元素；span默认display属性值为“inline”，是“行内”元素。
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">（1）行内元素有：a b span img input select strong（强调的语气）</span><br><span class="line">（2）块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p</span><br><span class="line">（3）常见的空元素：&lt;hr&gt; &lt;img&gt; &lt;input&gt; &lt;link&gt; &lt;meta&gt; &lt;br&gt;</span><br><span class="line">    鲜为人知的空元素： &lt;area&gt; &lt;base&gt; &lt;col&gt; &lt;command&gt; &lt;embed&gt; &lt;keygen&gt; &lt;param&gt; &lt;source&gt; &lt;track&gt; &lt;wbr&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="4-CSS引入的方式有哪些-页面导入样式时，使用link和-import有什么区别？"><a href="#4-CSS引入的方式有哪些-页面导入样式时，使用link和-import有什么区别？" class="headerlink" title="4.CSS引入的方式有哪些? 页面导入样式时，使用link和@import有什么区别？"></a>4.CSS引入的方式有哪些? 页面导入样式时，使用link和@import有什么区别？</h3><pre><code>内联, 内嵌 ,外链, 导入。
+</code></pre><ol>
+<li>link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS; </li>
+<li>页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载; </li>
+<li>import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;</li>
+</ol>
+<h3 id="5-无样式内容闪烁（FOUC）Flash-of-Unstyle-Content"><a href="#5-无样式内容闪烁（FOUC）Flash-of-Unstyle-Content" class="headerlink" title="5.无样式内容闪烁（FOUC）Flash of Unstyle Content"></a>5.无样式内容闪烁（FOUC）Flash of Unstyle Content</h3><p>@import导入CSS文件会等到文档加载完后再加载CSS样式表。因此，在页面DOM加载完成到CSS导入完成之间会有一段时间页面上的内容是没有样式的。</p>
+<p>解决方法：使用link标签加载CSS样式文件。因为link是顺序加载的，这样页面会等到CSS下载完之后再下载HTML文件，这样先布局好，就不会出现FOUC问题。</p>
+<h3 id="6-介绍一下你对浏览器内核的理解？"><a href="#6-介绍一下你对浏览器内核的理解？" class="headerlink" title="6.介绍一下你对浏览器内核的理解？"></a>6.介绍一下你对浏览器内核的理解？</h3><p>主要分成两部分：渲染引擎(Layout Engine或Rendering Engine)和JS引擎。</p>
+<p>渲染引擎：负责取得网页的内容（HTML、XML、图像等等）、整理讯息（例如加入CSS等），以及计算网页的显示方式，然后会输出至显示器或打印机。浏览器的内核的不同对于网页的语法解释会有不同，所以渲染的效果也不相同。<br>JS引擎：解析和执行javascript来实现网页的动态效果。</p>
+<p>最开始渲染引擎和JS引擎并没有区分的很明确，后来JS引擎越来越独立，内核就倾向于只指渲染引擎。</p>
+<h3 id="7-常见的浏览器内核有哪些？"><a href="#7-常见的浏览器内核有哪些？" class="headerlink" title="7.常见的浏览器内核有哪些？"></a>7.常见的浏览器内核有哪些？</h3><p>Trident内核：IE,MaxThon,TT,The World,360,搜狗浏览器等。[又称MSHTML] </p>
+<p>Gecko内核：Netscape6及以上版本，FF,MozillaSuite/SeaMonkey等。</p>
+<p> Presto内核：Opera7及以上。      [Opera内核原为：Presto，现为：Blink;] </p>
+<p>Webkit内核：Safari,Chrome等。   [ Chrome的：Blink（WebKit的分支）] </p>
+<p>EdgeHTML内核：Microsoft Edge。  [此内核其实是从MSHTML fork而来，删掉了几乎所有的IE私有特性]</p>
+<h3 id="8-HTML5有哪些新特性-移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分HTML和HTML5？"><a href="#8-HTML5有哪些新特性-移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分HTML和HTML5？" class="headerlink" title="8.HTML5有哪些新特性,移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分HTML和HTML5？"></a>8.HTML5有哪些新特性,移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分HTML和HTML5？</h3><p>新增加了图像、位置、存储、多任务等功能。<br>新增元素：</p>
+<ol>
+<li>canvas</li>
+<li>用于媒介回放的video和audio元素</li>
+<li>本地离线存储。localStorage长期存储数据，浏览器关闭后数据不丢失;sessionStorage的数据在浏览器关闭后自动删除</li>
+<li>语意化更好的内容元素，比如 article footer header nav section</li>
+<li>位置API：Geolocation</li>
+<li>表单控件，calendar date time email url search</li>
+<li>新的技术：web worker(web worker是运行在后台的 JavaScript，独立于其他脚本，不会影响页面的性能。您可以继续做任何愿意做的事情：点击、选取内容等等，而此时 web worker 在后台运行) web socket</li>
+<li>拖放API：drag、drop</li>
+</ol>
+<p>移除的元素：</p>
+<ol>
+<li>纯表现的元素：basefont big center font s strike tt u</li>
+<li>性能较差元素：frame frameset noframes</li>
+</ol>
+<p>区分：</p>
+<ol>
+<li>DOCTYPE声明的方式是区分重要因素</li>
+<li>根据新增加的结构、功能来区分</li>
+</ol>
+<h3 id="9-什么是语义化的HTML，语义化的作用是什么？"><a href="#9-什么是语义化的HTML，语义化的作用是什么？" class="headerlink" title="9.什么是语义化的HTML，语义化的作用是什么？"></a>9.什么是语义化的HTML，语义化的作用是什么？</h3><p>语义化的HTML就是写出的HTML代码，符合内容的结构化（内容语义化），选择合适的标签（代码语义化），能够便于开发者阅读和写出更规范性代码的同时让浏览器的爬虫和机器很好地解析。</p>
+<p>作用：</p>
+<p>a.有利于SEO，有利于搜索引擎爬虫更好的理解我们的网页，从而获取更多的有效信息，提升网页的权重。</p>
+<p>b.在没有CSS的时候能够清晰的看出网页的结构，增强可读性。</p>
+<p>c.便于团队开发和维护，语义化的HTML可以让开发者更容易的看明白，从而提高团队的效率和协调能力。</p>
+<p>d.支持多终端设备的浏览器渲染。</p>
+<h3 id="10-HTML5的文件离线储存怎么使用，工作原理是什么？浏览器是怎么对HTML5的离线存储资源进行管理和加载的？"><a href="#10-HTML5的文件离线储存怎么使用，工作原理是什么？浏览器是怎么对HTML5的离线存储资源进行管理和加载的？" class="headerlink" title="10.HTML5的文件离线储存怎么使用，工作原理是什么？浏览器是怎么对HTML5的离线存储资源进行管理和加载的？"></a>10.HTML5的文件离线储存怎么使用，工作原理是什么？浏览器是怎么对HTML5的离线存储资源进行管理和加载的？</h3><p>在线情况下，浏览器发现HTML头部有manifest属性，它会请求manifest文件，如果是第一次访问，那么浏览器就会根据manifest文件的内容下载相应的资源，并进行离线存储。如果已经访问过并且资源已经离线存储了，那么浏览器就会使用离线的资源加载页面。然后浏览器会对比新的manifest文件与旧的manifest文件，如果文件没有发生改变，就不会做任何操作，如果文件改变了，那么就会重新下载文件中的资源，并且进行离线存储。例如，</p>
+<p>在页面头部加入manifest属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;html manifest=&apos;cache.manifest&apos;&gt;</span><br></pre></td></tr></table></figure>
+<p>在cache.manifest文件中编写离线存储的资源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">CACHE MANIFEST</span><br><span class="line">#v0.11</span><br><span class="line">CACHE:</span><br><span class="line">js/app.js</span><br><span class="line">css/style.css</span><br><span class="line">NETWORK:</span><br><span class="line">Resourse/logo.png</span><br><span class="line">FALLBACK:</span><br><span class="line"> //offline.html</span><br></pre></td></tr></table></figure>
+<p>在离线状态时，操作 window.applicationCache 进行需求实现。<br>在线情况下，浏览器发现html头部有manifest属性，它会请求manifest文件，如果是第一次访问app，那么浏览器就会根据manifest文件的内容下载相应的资源并且进行离线存储。如果已经访问过app并且资源已经离线存储了，那么浏览器就会使用离线的资源加载页面，然后浏览器会对比新的manifest文件与旧的manifest文件，如果文件没有发生改变，就不做任何操作，如果文件改变了，那么就会重新下载文件中的资源并进行离线存储。</p>
+<h3 id="11-cookies，sessionStorage和localStorage的区别？"><a href="#11-cookies，sessionStorage和localStorage的区别？" class="headerlink" title="11.cookies，sessionStorage和localStorage的区别？"></a>11.cookies，sessionStorage和localStorage的区别？</h3><p>共同点：都是保存在浏览器端，且是同源的。</p>
+<p>区别：</p>
+<ol>
+<li>cookies是为了标识用户身份而存储在用户本地终端上的数据，始终在同源http请求中携带，即cookies在浏览器和服务器间来回传递，而sessionstorage和localstorage不会自动把数据发给服务器，仅在本地保存。</li>
+<li>存储大小的限制不同。cookie保存的数据很小，不能超过4k，而sessionstorage和localstorage保存的数据大，可达到5M。</li>
+<li>数据的有效期不同。cookie在设置的cookie过期时间之前一直有效，即使窗口或者浏览器关闭。sessionstorage仅在浏览器窗口关闭之前有效。localstorage始终有效，窗口和浏览器关闭也一直保存，用作长久数据保存。</li>
+<li>作用域不同。cookie在所有的同源窗口都是共享；sessionstorage不在不同的浏览器共享，即使同一页面；localstorage在所有同源窗口都是共享</li>
+</ol>
+<h3 id="12-iframe框架有那些优缺点？"><a href="#12-iframe框架有那些优缺点？" class="headerlink" title="12.iframe框架有那些优缺点？"></a>12.iframe框架有那些优缺点？</h3><p>优点：</p>
+<ol>
+<li>iframe能够原封不动的把嵌入的网页展现出来。</li>
+<li>如果有多个网页引用iframe，那么你只需要修改iframe的内容，就可以实现调用的每一个页面内容的更改，方便快捷。</li>
+<li>网页如果为了统一风格，头部和版本都是一样的，就可以写成一个页面，用iframe来嵌套，可以增加代码的可重用。</li>
+<li><p>如果遇到加载缓慢的第三方内容如图标和广告，这些问题可以由iframe来解决。</p>
+<p>缺点：</p>
+</li>
+<li><p>iframe会阻塞主页面的Onload事件； </p>
+</li>
+<li>搜索引擎的检索程序无法解读这种页面，不利于SEO；</li>
+<li>iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。 使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好通过JavaScript动态给iframe添加src属性值，这样可以绕开以上两个问题。</li>
+</ol>
+<h3 id="13-label的作用是什么-是怎么用的"><a href="#13-label的作用是什么-是怎么用的" class="headerlink" title="13.label的作用是什么? 是怎么用的?"></a>13.label的作用是什么? 是怎么用的?</h3><p>label标签用来定义表单控件间的关系,当用户选择该标签时，浏览器会自动将焦点转到和标签相关的表单控件上。label 中有两个属性是非常有用的, FOR和ACCESSKEY。<br>FOR属性功能：表示label标签要绑定的HTML元素，你点击这个标签的时候，所绑定的元素将获取焦点。例如，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Label FOR=&quot;InputBox&quot;&gt;姓名&lt;/Label&gt;&lt;input ID=&quot;InputBox&quot; type=&quot;text&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>ACCESSKEY属性功能：表示访问label标签所绑定的元素的热键，当您按下热键，所绑定的元素将获取焦点。例如，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Label FOR=&quot;InputBox&quot; ACCESSKEY＝&quot;N&quot;&gt;姓名&lt;/Label&gt;&lt;input ID=&quot;InputBox&quot; type=&quot;text&quot;&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="14-HTML5的form如何关闭自动完成功能？"><a href="#14-HTML5的form如何关闭自动完成功能？" class="headerlink" title="14.HTML5的form如何关闭自动完成功能？"></a>14.HTML5的form如何关闭自动完成功能？</h3><p>HTML的输入框可以拥有自动完成的功能，当你往输入框输入内容的时候，浏览器会从你以前的同名输入框的历史记录中查找出类似的内容并列在输入框下面，这样就不用全部输入进去了，直接选择列表中的项目就可以了。但有时候我们希望关闭输入框的自动完成功能，例如当用户输入内容的时候，我们希望使用AJAX技术从数据库搜索并列举而不是在用户的历史记录中搜索。</p>
+<p>方法：</p>
+<ol>
+<li>在IE的internet选项菜单中里的自动完成里面设置</li>
+<li>设置form输入框的autocomplete为on或者off来来开启输入框的自动完成功能</li>
+</ol>
+<h3 id="15-如何实现浏览器内多个标签页之间的通信"><a href="#15-如何实现浏览器内多个标签页之间的通信" class="headerlink" title="15.如何实现浏览器内多个标签页之间的通信?"></a>15.如何实现浏览器内多个标签页之间的通信?</h3><ol>
+<li>WebSocket SharedWorker</li>
+<li>也可以调用 localstorge、cookies 等本地存储方式。 localstorge 在另一个浏览上下文里被添加、修改或删除时，它都会触发一个事件，我们通过监听事件，控制它的值来进行页面信息通信。</li>
+</ol>
+<p>​      注意：Safari 在无痕模式下设置 localstorge 值时会抛出QuotaExceededError 的异常</p>
+<h3 id="16-webSocket如何兼容低浏览器？"><a href="#16-webSocket如何兼容低浏览器？" class="headerlink" title="16.webSocket如何兼容低浏览器？"></a>16.webSocket如何兼容低浏览器？</h3><ol>
+<li>Adobe Flash Socket ActiveX HTMLFile (IE) 基于 multipart 编码发送 XHR 基于长轮询的 XHR</li>
+<li>引用WebSocket.js这个文件来兼容低版本浏览器。</li>
+</ol>
+<h3 id="17-页面可见性（Page-Visibility）API-可以有哪些用途？"><a href="#17-页面可见性（Page-Visibility）API-可以有哪些用途？" class="headerlink" title="17.页面可见性（Page Visibility）API 可以有哪些用途？"></a>17.页面可见性（Page Visibility）API 可以有哪些用途？</h3><ol>
+<li>通过visibility state的值得检测页面当前是否可见，以及打开网页的时间。</li>
+<li>在页面被切换到其他后台进程时，自动暂停音乐或视频的播放。</li>
+</ol>
+<h3 id="18-如何在页面上实现一个圆形的可点击区域？"><a href="#18-如何在页面上实现一个圆形的可点击区域？" class="headerlink" title="18.如何在页面上实现一个圆形的可点击区域？"></a>18.如何在页面上实现一个圆形的可点击区域？</h3><ol>
+<li>map+area或者svg</li>
+<li>border-radius</li>
+<li>纯js实现，一个点不在圆上的算法</li>
+</ol>
+<h3 id="19-实现不使用-border-画出1px高的线，在不同浏览器的Quirks-mode和CSS-Compat模式下都能保持同一效果"><a href="#19-实现不使用-border-画出1px高的线，在不同浏览器的Quirks-mode和CSS-Compat模式下都能保持同一效果" class="headerlink" title="19.实现不使用 border 画出1px高的线，在不同浏览器的Quirks mode和CSS Compat模式下都能保持同一效果"></a>19.实现不使用 border 画出1px高的线，在不同浏览器的Quirks mode和CSS Compat模式下都能保持同一效果</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=&quot;height:1px;overflow:hidden;background:red&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="20-网页验证码是干嘛的，是为了解决什么安全问题？"><a href="#20-网页验证码是干嘛的，是为了解决什么安全问题？" class="headerlink" title="20.网页验证码是干嘛的，是为了解决什么安全问题？"></a>20.网页验证码是干嘛的，是为了解决什么安全问题？</h3><ol>
+<li><p>区分用户是计算机还是人的程序;</p>
+</li>
+<li><p>可以防止恶意破解密码、刷票、论坛灌水；</p>
+</li>
+</ol>
+<h3 id="21-title与h1的区别、b与strong的区别、i与em的区别？"><a href="#21-title与h1的区别、b与strong的区别、i与em的区别？" class="headerlink" title="21.title与h1的区别、b与strong的区别、i与em的区别？"></a>21.title与h1的区别、b与strong的区别、i与em的区别？</h3><p>title属性没有明确意义，只表示标题；h1表示层次明确的标题，对页面信息的抓取也有很大的影响<br>strong标明重点内容，语气加强含义；b是无意义的视觉表示<br>em表示强调文本；i是斜体，是无意义的视觉表示<br>视觉样式标签：<code>b i u s</code><br>语义样式标签：<code>strong em ins del code</code></p>
+<h3 id="22-元素的alt和title有什么异同？"><a href="#22-元素的alt和title有什么异同？" class="headerlink" title="22.元素的alt和title有什么异同？"></a>22.元素的alt和title有什么异同？</h3><p>在alt和title同时设置的时候，alt作为图片的替代文字出现，title是图片的解释文字。23.xhtml和html有什么区别?</p>
+<p>区别是：</p>
+<p>XHTML 元素必须被正确地嵌套。</p>
+<p>XHTML 元素必须被关闭。</p>
+<p>标签名必须用小写字母。</p>
+<p>XHTML 文档必须拥有根元素。</p>
+<h3 id="23-对WEB标准以及W3C的理解与认识？"><a href="#23-对WEB标准以及W3C的理解与认识？" class="headerlink" title="23.对WEB标准以及W3C的理解与认识？"></a>23.对WEB标准以及W3C的理解与认识？</h3><p>标签闭合、标签小写、不乱嵌套、提高搜索引擎、使用外链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维 护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性.</p>
+<h3 id="24-前端页面有哪三层构成，分别是什么-作用是什么"><a href="#24-前端页面有哪三层构成，分别是什么-作用是什么" class="headerlink" title="24.前端页面有哪三层构成，分别是什么?作用是什么?"></a>24.前端页面有哪三层构成，分别是什么?作用是什么?</h3><p>Hnml结构层，css表示层，js行为层</p>
+<p>作用是：实现分离。使用html去创建文档的结构，使用css去设置文档的呈现效果，使用js脚本去实现文档的行为。</p>
+<h3 id="25-CSS选择符有哪些-哪些属性可以继承-优先级算法如何计算-内联和important哪个优先级高"><a href="#25-CSS选择符有哪些-哪些属性可以继承-优先级算法如何计算-内联和important哪个优先级高" class="headerlink" title="25.CSS选择符有哪些?哪些属性可以继承?优先级算法如何计算?内联和important哪个优先级高?"></a>25.CSS选择符有哪些?哪些属性可以继承?优先级算法如何计算?内联和important哪个优先级高?</h3><p>标签选择符 类选择符 id选择符</p>
+<p>继承不如指定 Id&gt;class&gt;标签选择</p>
+<p>后者优先级高</p>
+<h3 id="26-css的基本语句构成是"><a href="#26-css的基本语句构成是" class="headerlink" title="26.css的基本语句构成是?"></a>26.css的基本语句构成是?</h3><p>选择器{属性1:值1;属性2:值2;……}</p>
+<h3 id="27-写出几种IE6-BUG的解决方法"><a href="#27-写出几种IE6-BUG的解决方法" class="headerlink" title="27.写出几种IE6 BUG的解决方法"></a>27.写出几种IE6 BUG的解决方法</h3><p>a.双边距BUG float引起的 使用display</p>
+<p>b.像素问题 使用float引起的 使用dislpay:inline -3px</p>
+<p>c.超链接hover 点击后失效 使用正确的书写顺序 link visited hover active</p>
+<p>d.Ie z-index问题 给父级添加position:relative</p>
+<p>e.Png 透明 使用js代码 改</p>
+<p>f.Min-height 最小高度 ！Important 解决’</p>
+<p>g.select 在ie6下遮盖 使用iframe嵌套</p>
+<p>h.为什么没有办法定义1px左右的宽度容器（IE6默认的行高造成的，使用over:hidden,zoom:0.08 line-height:1px）</p>
+<h3 id="28-浏览器标准模式和怪异模式之间的区别是什么"><a href="#28-浏览器标准模式和怪异模式之间的区别是什么" class="headerlink" title="28.浏览器标准模式和怪异模式之间的区别是什么?"></a>28.浏览器标准模式和怪异模式之间的区别是什么?</h3><p>盒子模型 渲染模式的不同</p>
+<p>使用 window.top.document.compatMode 可显示为什么模式</p>
+<h3 id="29-你如何对网站的文件和资源进行优化-期待的解决方案包括："><a href="#29-你如何对网站的文件和资源进行优化-期待的解决方案包括：" class="headerlink" title="29.你如何对网站的文件和资源进行优化?期待的解决方案包括："></a>29.你如何对网站的文件和资源进行优化?期待的解决方案包括：</h3><p>文件合并</p>
+<p>文件最小化/文件压缩</p>
+<p>使用CDN托管</p>
+<p>缓存的使用</p>
+<h3 id="30-描述css-reset的作用和用途。"><a href="#30-描述css-reset的作用和用途。" class="headerlink" title="30.描述css reset的作用和用途。"></a>30.描述css reset的作用和用途。</h3><p>Reset重置浏览器的css默认属性 浏览器的品种不同，样式不同，然后重置，让他们统一.</p>
+<h3 id="31-解释css-sprites，如何使用。"><a href="#31-解释css-sprites，如何使用。" class="headerlink" title="31.解释css sprites，如何使用。"></a>31.解释css sprites，如何使用。</h3><p>Css 精灵 把一堆小的图片整合到一张大的图片上，减轻服务器对图片的请求数量.</p>
+<h3 id="32-清除浮动的几种方式，各自的优缺点"><a href="#32-清除浮动的几种方式，各自的优缺点" class="headerlink" title="32.清除浮动的几种方式，各自的优缺点?"></a>32.清除浮动的几种方式，各自的优缺点?</h3><p>a使用空标签清除浮动 clear:both（理论上能清除任何标签，增加无意义的标签）</p>
+<p>b.使用overflow:auto（空标签元素清除浮动而不得不增加无意代码的弊端,,使用zoom:1用于兼容IE）</p>
+<p>c.是用afert伪元素清除浮动(用于非IE浏览器</p>
+<h3 id="33-浏览器标准模式和怪异模式之间的区别是什么"><a href="#33-浏览器标准模式和怪异模式之间的区别是什么" class="headerlink" title="33.浏览器标准模式和怪异模式之间的区别是什么?"></a>33.浏览器标准模式和怪异模式之间的区别是什么?</h3><p>盒子模型 渲染模式的不同</p>
+<p>使用 window.top.document.compatMode 可显示为什么模式</p>
+<h3 id="34-如何优化代码？"><a href="#34-如何优化代码？" class="headerlink" title="34.如何优化代码？"></a>34.如何优化代码？</h3><p>​    <strong>a.</strong>代码重用</p>
+<p>​    b.避免全局变量（命名空间，封闭空间，模块化mvc..）</p>
+<p>​    c.拆分函数避免函数过于臃肿</p>
+<p>​    d.注释</p>
+<p>​    e.代码压缩</p>
+<p>​    f.减少http请求</p>
+<p>​    g.图片<a href="http://www.baidu.com/link?url=N9aWYuuRP6WPds44r5pLfyXwxMtp6Ue3qnt2318jkEVYTPsNgTtocT-yVt1a_QxTZXedXavJ2AAvbW1qTZRHLtINKR0stcCvdMU-vL1mtXa" target="_blank" rel="noopener">css sprite</a></p>
+<h3 id="35-什么是媒体查询，如何使用？"><a href="#35-什么是媒体查询，如何使用？" class="headerlink" title="35.什么是媒体查询，如何使用？"></a>35.什么是媒体查询，如何使用？</h3><p>媒体查询可以让我们根据设备显示器的特性（如视口宽度、屏幕比例、设备方向：横向或纵向）为其设定CSS样式，媒体查询由媒体类型和一个或多个检测媒体特性的条件表达式组成。媒体查询中可用于检测的媒体特性有 width 、 height 和 color （等）。使用媒体查询，可以在不改变页面内容的情况下，为特定的一些输出设备定制显示效果。</p>
+<p>一，首先需要在html文档中添加以下代码，用来兼容移动设备的显示效果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;viewport content=&quot;width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no&quot;/&gt;</span><br><span class="line"></span><br><span class="line">注意：width=device-width:宽度等于当前设备的宽度</span><br><span class="line"></span><br><span class="line">initial-scale=1：初始的缩放比例（默认为1）</span><br><span class="line"></span><br><span class="line">maximum-scale=1：允许用户缩放到得最大比例（默认为1）</span><br><span class="line"></span><br><span class="line">user-scalable=no：用户不能手动缩放</span><br></pre></td></tr></table></figure>
+<p>二，在CSS文件中写CSS响应式媒体查询 </p>
+<p>例: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@media screen and (max-width:720px) and (min-width:320px)&#123;</span><br><span class="line">  body&#123;</span><br><span class="line">​       background-color:red;</span><br><span class="line">​    &#125;</span><br><span class="line">@media screen and (max-width:320px)&#123;</span><br><span class="line">  body&#123;</span><br><span class="line">​       background-color:blue;</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>该段媒体查询的意思是：当设备屏幕宽度在320px——720px之间时，媒体查询中body的背景色（background-color:red;）会重叠之前的body背景色，当设备屏幕宽度在320px以下时，媒体查询中body的body背景色（background-color:blue;）会重叠之前的body背景色</p>
+<p>怎么样才能做到屏幕适配？</p>
+<p>需要用的是：</p>
+<meta name="viewport" content="width=devive-width">
+
+<p>meta viewport 中有6个通用属性： </p>
+<p>1）width 设置layout viewport的宽度 正整数或字符串 ‘width-device’﻿</p>
+<p>2）initial-scale 设置页面的初始缩放值，数字或小数﻿</p>
+<p>3）minimum-scale 允许用户的最小缩放值 数字或小数﻿</p>
+<p>4）maximum-scale 允许用户的最大缩放值 数字或小数﻿</p>
+<p>5）height 设置layout viewport 的高度，这个属性很少用到</p>
+<p>6）user-scaleabel 是否允许用户进行缩放 ‘no’或‘yes’ 还有2个需要特别注意的两个属性﻿</p>
+<p>7）target-densitydpi 在andriod 4.0一下的设备中，不支持设置viewport的width，android 自带浏览器支持设置 target-densitydpi来达到目的；</p>
+<h3 id="36-请说出三种减低页面加载时间的方法"><a href="#36-请说出三种减低页面加载时间的方法" class="headerlink" title="36.请说出三种减低页面加载时间的方法"></a>36.请说出三种减低页面加载时间的方法</h3><p>a、压缩css、js文件</p>
+<p>b、合并js、css文件，减少http请求</p>
+<p>c、外部js、css文件放在最底下</p>
+<p>d、减少dom操作，尽可能用变量替代不必要的dom操作</p>
+<h3 id="37-http和https有什么区别"><a href="#37-http和https有什么区别" class="headerlink" title="37.http和https有什么区别?"></a>37.http和https有什么区别?</h3><p>​     在URL前加https://前缀表明是用SSL加密的。 你的电脑与服务器之间收发的信息传输将更加安全。 Web服务器启用SSL需要获得一个服务器证书并将该证书与要使用SSL的服务器绑定。<br>​     http和https使用的是完全不同的连接方式,用的端口也不一样,前者是80,后者是443。<br>​     http的连接很简单,是无状态的,…<br>​     HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，要比http协议安全</p>
+<h3 id="38-浏览器缓存有几种，有什么区别？"><a href="#38-浏览器缓存有几种，有什么区别？" class="headerlink" title="38.浏览器缓存有几种，有什么区别？"></a>38.浏览器缓存有几种，有什么区别？</h3><p>  网站后台缓存 是网站程序产生的一些临时文件，如PHP程序最喜欢。这个文件一般是在网站程序目录。<br>​     服务器缓存是服务器为了提升速度而产生的一些临时文件，如gzip的文件，一般是防在特定的目录。<br>​     浏览器缓存是用户本地浏览器缓存的网页文件，比如我们第一次打开一个网站速度会慢一些，第二次打开就很快，就是缓存在了本地。</p>
+<h3 id="39-有做过页面性能优化么？如何做的？"><a href="#39-有做过页面性能优化么？如何做的？" class="headerlink" title="39.有做过页面性能优化么？如何做的？"></a>39.有做过页面性能优化么？如何做的？</h3><p>​       把样式表置于顶部<br>​       把脚本置于页面底部<br>​       避免使用 CSS 表达式（Expression）<br>​       使用外部 JavaScript 和 CSS<br>​       削减 JavaScript 和 CSS<br>​       用 <link> 代替 @import<br>​       避免使用滤镜<br>​       剔除重复脚本<br>​       减少DOM访问<br>​       开发智能事件处理程序<br>​       Coockie:<br>​       减小Cookie体积<br>​       对于页面内容使用无coockie域名<br>​      图片：<br>​      优化图像<br>​      优化CSS Spirite<br>​      不要在HTML中缩放图像<br>​      favicon.ico要小而且可缓存</p>
+<h3 id="40-XML和JSON的区别？"><a href="#40-XML和JSON的区别？" class="headerlink" title="40.XML和JSON的区别？"></a>40.XML和JSON的区别？</h3><p>(1).数据体积方面。</p>
+<p>JSON相对于XML来讲，数据的体积小，传递的速度更快些。</p>
+<p>(2).数据交互方面。</p>
+<p>JSON与JavaScript的交互更加方便，更容易解析处理，更好的数据交互。</p>
+<p>(3).数据描述方面。</p>
+<p>JSON对数据的描述性比XML较差。</p>
+<p>(4).传输速度方面。</p>
+<p>JSON的速度要远远快于XML。</p>
+<h3 id="41-CSS3有哪些新特性？"><a href="#41-CSS3有哪些新特性？" class="headerlink" title="41.CSS3有哪些新特性？"></a>41.CSS3有哪些新特性？</h3><p>CSS3实现圆角（border-radius），阴影（box-shadow），对文字加特效（text-shadow、），线性渐变（gradient），旋转（transform），transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);//旋转,缩放,定位,倾斜，增加了更多的CSS选择器  多背景 rgba，在CSS3中唯一引入的伪元素是::selection.，媒体查询，多栏布局，border-image</p>
+<h3 id="未完待续，不定期更新…"><a href="#未完待续，不定期更新…" class="headerlink" title="未完待续，不定期更新…"></a>未完待续，不定期更新…</h3>
+      
+    </div>
+    
+    
+    
+
+      <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2018/12/05/HTML基础面试题（附答案）/">HTML基础面试题（附答案）</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Neil Ni 的个人博客">Neil Ni</a></p>
+  <p><span>发布时间:</span>2018年12月05日 - 11:51</p>
+  <p><span>最后更新:</span>2018年12月05日 - 21:25</p>
+  <p><span>原始链接:</span><a href="/2018/12/05/HTML基础面试题（附答案）/" title="HTML基础面试题（附答案）">http://yoursite.com/2018/12/05/HTML基础面试题（附答案）/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/12/05/HTML基础面试题（附答案）/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+      
+      </div>
+    
+
+    <div>
+       
+       <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+  
+    </div>
+
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/html/" rel="tag"><i class="fa fa-tag"></i> html</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/02/面对JavaScript吧！：02数据类型、运算符、运算符优先级/" rel="next" title="面对JavaScript吧!:02数据类型、运算符、运算符优先级">
+                <i class="fa fa-chevron-left"></i> 面对JavaScript吧!:02数据类型、运算符、运算符优先级
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/yeqiu.jpg" alt="Neil Ni">
+            
+              <p class="site-author-name" itemprop="name">Neil Ni</p>
+              <p class="site-description motion-element" itemprop="description">Dream It Possible</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Neil94n" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:neil.ni@foxmail.com" target="_blank" title="Email">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>Email</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=417095066" target="_blank" title="QQ">
+                      
+                        <i class="fa fa-fw fa-qq"></i>QQ</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/ni-fei-87-37/activities" target="_blank" title="zhihu">
+                      
+                        <i class="fa fa-fw fa-book"></i>zhihu</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                强烈推荐
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.ruanyifeng.com/blog/" title="阮一峰老师的博客" target="_blank">阮一峰老师的博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.liaoxuefeng.com/" title="廖雪峰的个人网站" target="_blank">廖雪峰的个人网站</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.zhangxinxu.com/wordpress/" title="张鑫旭的个人网站" target="_blank">张鑫旭的个人网站</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Neil Ni</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-line-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">65k</span>
+  
+</div>
+<!--
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+-->
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+
+  <span class="post-meta-divider">|</span>
+
+
+<!-- 
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+-->
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共65k字</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+<!-- 页面点击小红心 -->
+	<script type="text/javascript" src="/js/src/love.js">
+         </script>
