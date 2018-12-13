@@ -183,11 +183,11 @@
     <link href="http://yoursite.com/2018/12/04/%E9%9D%A2%E5%AF%B9JavaScript%E5%90%A7%EF%BC%8104%E5%87%BD%E6%95%B0/"/>
     <id>http://yoursite.com/2018/12/04/面对JavaScript吧！04函数/</id>
     <published>2018-12-04T05:11:31.000Z</published>
-    <updated>2018-12-08T09:17:39.130Z</updated>
+    <updated>2018-12-13T12:43:25.415Z</updated>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;总结：数字-undefined-Nan&quot;&gt;&lt;a href=&quot;#总结：数字-undefined-Nan&quot; class=&quot;headerlink&quot; title=&quot;总结：数字+undefined===Nan&quot;&gt;&lt;/a&gt;总结：数字+undefined===Nan&lt;/h4&gt;&lt;h1 id=&quot;一、函数的使用&quot;&gt;&lt;a href=&quot;#一、函数的使用&quot; class=&quot;headerlink&quot; title=&quot;一、函数的使用&quot;&gt;&lt;/a&gt;一、函数的使用&lt;/h1&gt;&lt;h3 id=&quot;1、什么是语句：先看这几个概念&quot;&gt;&lt;a href=&quot;#1、什么是语句：先看这几个概念&quot; class=&quot;headerlink&quot; title=&quot;1、什么是语句：先看这几个概念&quot;&gt;&lt;/a&gt;1、什么是语句：先看这几个概念&lt;/h3&gt;&lt;p&gt;表达式：&lt;/p&gt;
+      &lt;h1 id=&quot;一、函数的使用&quot;&gt;&lt;a href=&quot;#一、函数的使用&quot; class=&quot;headerlink&quot; title=&quot;一、函数的使用&quot;&gt;&lt;/a&gt;一、函数的使用&lt;/h1&gt;&lt;h3 id=&quot;1、什么是语句：先看这几个概念&quot;&gt;&lt;a href=&quot;#1、什么是语句：先看这几个概念&quot; class=&quot;headerlink&quot; title=&quot;1、什么是语句：先看这几个概念&quot;&gt;&lt;/a&gt;1、什么是语句：先看这几个概念&lt;/h3&gt;&lt;p&gt;表达式：&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;a=1 a+b&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;typeof&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>

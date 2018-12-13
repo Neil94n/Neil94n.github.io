@@ -79,22 +79,22 @@
 
 
 
-<meta name="description" content="总结：数字+undefined===Nan一、函数的使用1、什么是语句：先看这几个概念表达式： 12a=1 a+btypeof">
+<meta name="description" content="一、函数的使用1、什么是语句：先看这几个概念表达式： 12a=1 a+btypeof">
 <meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="面对JavaScript吧!04函数">
 <meta property="og:url" content="http://yoursite.com/2018/12/04/面对JavaScript吧！04函数/index.html">
 <meta property="og:site_name" content="Neil&#39;s Blog">
-<meta property="og:description" content="总结：数字+undefined===Nan一、函数的使用1、什么是语句：先看这几个概念表达式： 12a=1 a+btypeof">
+<meta property="og:description" content="一、函数的使用1、什么是语句：先看这几个概念表达式： 12a=1 a+btypeof">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/8/15/1653c8e19aeacb56?w=600&h=338&f=jpeg&s=21407">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/8/15/1653c8e19ae9258a?w=600&h=124&f=jpeg&s=10691">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/8/15/1653c8e19b1e6a81?w=600&h=195&f=jpeg&s=11952">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/8/15/1653c8e19b21ed69?w=600&h=289&f=jpeg&s=16245">
-<meta property="og:updated_time" content="2018-12-08T09:17:39.130Z">
+<meta property="og:updated_time" content="2018-12-13T12:43:25.415Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面对JavaScript吧!04函数">
-<meta name="twitter:description" content="总结：数字+undefined===Nan一、函数的使用1、什么是语句：先看这几个概念表达式： 12a=1 a+btypeof">
+<meta name="twitter:description" content="一、函数的使用1、什么是语句：先看这几个概念表达式： 12a=1 a+btypeof">
 <meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2018/8/15/1653c8e19aeacb56?w=600&h=338&f=jpeg&s=21407">
 
 
@@ -432,7 +432,7 @@
       
 
       
-        <h4 id="总结：数字-undefined-Nan"><a href="#总结：数字-undefined-Nan" class="headerlink" title="总结：数字+undefined===Nan"></a>总结：数字+undefined===Nan</h4><h1 id="一、函数的使用"><a href="#一、函数的使用" class="headerlink" title="一、函数的使用"></a>一、函数的使用</h1><h3 id="1、什么是语句：先看这几个概念"><a href="#1、什么是语句：先看这几个概念" class="headerlink" title="1、什么是语句：先看这几个概念"></a>1、什么是语句：先看这几个概念</h3><p>表达式：</p>
+        <h1 id="一、函数的使用"><a href="#一、函数的使用" class="headerlink" title="一、函数的使用"></a>一、函数的使用</h1><h3 id="1、什么是语句：先看这几个概念"><a href="#1、什么是语句：先看这几个概念" class="headerlink" title="1、什么是语句：先看这几个概念"></a>1、什么是语句：先看这几个概念</h3><p>表达式：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a=1 a+b</span><br><span class="line">typeof</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <p>语句：代表一定功能的表达式的组合</p>
@@ -444,12 +444,11 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doSomething();  //需要的时候就调用</span><br></pre></td></tr></table></figure>
 <p>实例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function  sum()&#123; </span><br><span class="line">          console.log(&apos;hello&apos;)</span><br><span class="line">          console.log(&apos;wangxiaoqin&apos;) </span><br><span class="line">         &#125;  sum()  </span><br><span class="line">//返回</span><br><span class="line">//&quot;hello&quot; </span><br><span class="line">//&quot;wangxiaoqin&quot;</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
-<h1 id="二、声明函数"><a href="#二、声明函数" class="headerlink" title="二、声明函数"></a>二、声明函数</h1><p>ECMAScript规定三种声明函数方式</p>
-<h3 id="1、函数声明"><a href="#1、函数声明" class="headerlink" title="1、函数声明"></a>1、函数声明</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//使用function关键字可以声明一个函数  </span><br><span class="line">//printName()   即函数名称() ，可调用  </span><br><span class="line">function  printName()&#123;</span><br><span class="line">          console.log(&apos;世界&apos;)；</span><br><span class="line">    &#125; </span><br><span class="line"> printName()；</span><br></pre></td></tr></table></figure>
-<h3 id="2、函数表达式"><a href="#2、函数表达式" class="headerlink" title="2、函数表达式"></a>2、函数表达式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/* 通过var 进行一个声明变量，这里的  变量  等同于 函数表达式*/</span><br><span class="line"> var printName =  function()&#123;</span><br><span class="line">             console.log(&apos;饥人谷&apos;) </span><br><span class="line">      &#125;；</span><br><span class="line"> printName() </span><br><span class="line"></span><br><span class="line"> //等同于 </span><br><span class="line"> var printName =  3；</span><br></pre></td></tr></table></figure>
-<p><strong>函数声明VS函数表达式</strong></p>
-<h3 id="3、构造函数（不常用）"><a href="#3、构造函数（不常用）" class="headerlink" title="3、构造函数（不常用）"></a>3、构造函数（不常用）</h3><p>通过构造函数，使用<code>new</code>来创建一个函数对象</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var printName =  new  Function(&quot;console.log(&apos;Byron&apos;);&quot;);</span><br></pre></td></tr></table></figure>
+<h1 id="二、函数的五种声明方式"><a href="#二、函数的五种声明方式" class="headerlink" title="二、函数的五种声明方式"></a>二、函数的五种声明方式</h1><h3 id="1、具名函数"><a href="#1、具名函数" class="headerlink" title="1、具名函数"></a>1、具名函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function f(x,y)&#123;</span><br><span class="line">     return x+y</span><br><span class="line"> &#125;</span><br><span class="line"> f.name // &apos;f&apos;</span><br></pre></td></tr></table></figure>
+<h3 id="2、具名函数"><a href="#2、具名函数" class="headerlink" title="2、具名函数"></a>2、具名函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var f</span><br><span class="line">f = function(x,y)&#123;</span><br><span class="line">    return x+y</span><br><span class="line">&#125;</span><br><span class="line">f.name // &apos;f&apos;</span><br></pre></td></tr></table></figure>
+<h3 id="3、具名函数赋值"><a href="#3、具名函数赋值" class="headerlink" title="3、具名函数赋值"></a>3、具名函数赋值</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var f</span><br><span class="line"> f = function f2(x,y)&#123; return x+y &#125;</span><br><span class="line"> f.name // &apos;f2&apos;</span><br><span class="line"> console.log(f2) // undefined</span><br></pre></td></tr></table></figure>
+<h3 id="4、window-Function"><a href="#4、window-Function" class="headerlink" title="4、window.Function"></a>4、window.Function</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var f = new Function(&apos;x&apos;,&apos;y&apos;,&apos;return x+y&apos;)</span><br><span class="line"> f.name // &quot;anonymous&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="5、箭头函数"><a href="#5、箭头函数" class="headerlink" title="5、箭头函数"></a>5、箭头函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var f = (x,y) =&gt; &#123;</span><br><span class="line">     return x+y</span><br><span class="line"> &#125;</span><br><span class="line"> var sum = (x,y) =&gt; x+y</span><br><span class="line"> var n2 = n =&gt; n*n</span><br></pre></td></tr></table></figure>
 <h1 id="三、参数"><a href="#三、参数" class="headerlink" title="三、参数"></a>三、参数</h1><h3 id="1、只使用定义函数较为僵化，可通过参数方式让函数调用、复用。"><a href="#1、只使用定义函数较为僵化，可通过参数方式让函数调用、复用。" class="headerlink" title="1、只使用定义函数较为僵化，可通过参数方式让函数调用、复用。"></a>1、只使用定义函数较为僵化，可通过参数方式让函数调用、复用。</h3><p>举例说明：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">   function  printName(name)&#123; </span><br><span class="line">  //括号中的name为函数的参数 </span><br><span class="line">     console.log(name) </span><br><span class="line">        &#125;  </span><br><span class="line">printName(&apos;hunger&apos;)  </span><br><span class="line">printName(&apos;valley)  //等同于在函数设置变量  </span><br><span class="line">function  printName()&#123;  //括号为空括号 </span><br><span class="line">   var name = arguments[0]</span><br><span class="line">   console.log(name);  </span><br><span class="line">    &#125; </span><br><span class="line">   printName(&apos;hunger&apos;); </span><br><span class="line"></span><br><span class="line">  //假设没有传递参数 </span><br><span class="line">   function  printName()&#123;  //括号为空括号 </span><br><span class="line">  var name = arguments[0] </span><br><span class="line">   console.log(name);  </span><br><span class="line">       &#125;  </span><br><span class="line">      printName();  //arguments[0] 为undefined，name=undefined ,那么结果为undefined </span><br><span class="line"></span><br><span class="line"> //函数在定义的时候可以写多个参数  </span><br><span class="line">      function  printPersonInfo(name, age, sex)&#123; </span><br><span class="line">         console.log(name)</span><br><span class="line">         console.log(age)</span><br><span class="line">          console.log(sex)  &#125;</span><br></pre></td></tr></table></figure>
 <h3 id="2、Arguments传参数"><a href="#2、Arguments传参数" class="headerlink" title="2、Arguments传参数"></a>2、Arguments传参数</h3><p>通过函数内部的<code>arguments</code>对象获取到该函数的所有传入参数（按顺序传入），通过</p>
@@ -495,7 +494,7 @@
   <p><span>本文标题:</span><a href="/2018/12/04/面对JavaScript吧！04函数/">面对JavaScript吧!04函数</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Neil Ni 的个人博客">Neil Ni</a></p>
   <p><span>发布时间:</span>2018年12月04日 - 13:11</p>
-  <p><span>最后更新:</span>2018年12月08日 - 17:17</p>
+  <p><span>最后更新:</span>2018年12月13日 - 20:43</p>
   <p><span>原始链接:</span><a href="/2018/12/04/面对JavaScript吧！04函数/" title="面对JavaScript吧!04函数">http://yoursite.com/2018/12/04/面对JavaScript吧！04函数/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/12/04/面对JavaScript吧！04函数/" aria-label="复制成功！"></i></span>
   </p>
