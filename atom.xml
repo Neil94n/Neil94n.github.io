@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-08T10:24:07.720Z</updated>
+  <updated>2018-12-12T12:47:22.316Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面对JavaScript吧！10数组</title>
+    <link href="http://yoursite.com/2018/12/10/%E9%9D%A2%E5%AF%B9JavaScript%E5%90%A7%EF%BC%8110%E6%95%B0%E7%BB%84/"/>
+    <id>http://yoursite.com/2018/12/10/面对JavaScript吧！10数组/</id>
+    <published>2018-12-10T12:41:21.000Z</published>
+    <updated>2018-12-12T12:47:22.316Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一、数组基本使用&quot;&gt;&lt;a href=&quot;#一、数组基本使用&quot; class=&quot;headerlink&quot; title=&quot;一、数组基本使用&quot;&gt;&lt;/a&gt;一、数组基本使用&lt;/h1&gt;&lt;h3 id=&quot;1、如何去声明一个数组&quot;&gt;&lt;a href=&quot;#1、如何去声明一个数组&quot; class=&quot;headerlink&quot; title=&quot;1、如何去声明一个数组&quot;&gt;&lt;/a&gt;1、如何去声明一个数组&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var arr = [ 值 ]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;值里面可以是数据类型中的任何一个，如数字、字符串、对象、函数、数组等任何&lt;br&gt;如：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var arr =  [3，4，5]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面对JavaScript吧！09对象</title>
+    <link href="http://yoursite.com/2018/12/09/%E9%9D%A2%E5%AF%B9JavaScript%E5%90%A7%EF%BC%8109%E5%AF%B9%E8%B1%A1/"/>
+    <id>http://yoursite.com/2018/12/09/面对JavaScript吧！09对象/</id>
+    <published>2018-12-09T02:11:30.000Z</published>
+    <updated>2018-12-12T12:44:46.090Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一、对象&quot;&gt;&lt;a href=&quot;#一、对象&quot; class=&quot;headerlink&quot; title=&quot;一、对象&quot;&gt;&lt;/a&gt;一、对象&lt;/h1&gt;&lt;h3 id=&quot;1、定义：&quot;&gt;&lt;a href=&quot;#1、定义：&quot; class=&quot;headerlink&quot; title=&quot;1、定义：&quot;&gt;&lt;/a&gt;1、定义：&lt;/h3&gt;&lt;p&gt;本质上是一种无序的数据集合，由若干个“键值对”（又称为：成员）（key-value）构成。其中，键值对，包括键名（key，即成员的名称）、键值（value，即成员的值）。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>面对JavaScript吧！08原型和原型链</title>
@@ -223,6 +269,28 @@
   </entry>
   
   <entry>
+    <title>JavaScript学习笔记（一）数据类型</title>
+    <link href="http://yoursite.com/2018/11/20/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    <id>http://yoursite.com/2018/11/20/JavaScript学习笔记（二）数据类型/</id>
+    <published>2018-11-20T05:32:23.000Z</published>
+    <updated>2018-12-11T13:57:13.680Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;JavaScript 语言的每一个值，都属于某一种数据类型。JavaScript 的数据类型，共有六种。（ES6 又新增了第七种 Symbol 类型的值，暂不涉及。）&lt;br&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript学习笔记（一）入门篇</title>
     <link href="http://yoursite.com/2018/11/19/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89%E5%85%A5%E9%97%A8%E7%AF%87/"/>
     <id>http://yoursite.com/2018/11/19/JavaScript学习笔记（一）入门篇/</id>
@@ -399,77 +467,6 @@
     <summary type="html">
     
       &lt;h1 id=&quot;一、什么是布局&quot;&gt;&lt;a href=&quot;#一、什么是布局&quot; class=&quot;headerlink&quot; title=&quot;一、什么是布局&quot;&gt;&lt;/a&gt;一、什么是布局&lt;/h1&gt;&lt;h3 id=&quot;1、现有的布局满足不了人们的需求&quot;&gt;&lt;a href=&quot;#1、现有的布局满足不了人们的需求&quot; class=&quot;headerlink&quot; title=&quot;1、现有的布局满足不了人们的需求&quot;&gt;&lt;/a&gt;1、现有的布局满足不了人们的需求&lt;/h3&gt;&lt;p&gt;文档流、浮动、定位&lt;br&gt;
-    
-    </summary>
-    
-      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="css" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/css/"/>
-    
-    
-      <category term="css" scheme="http://yoursite.com/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS学习笔记（六）：元素居中</title>
-    <link href="http://yoursite.com/2018/11/11/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AD%EF%BC%89%EF%BC%9A%E5%85%83%E7%B4%A0%E5%B1%85%E4%B8%AD/"/>
-    <id>http://yoursite.com/2018/11/11/CSS学习笔记（六）：元素居中/</id>
-    <published>2018-11-11T09:22:46.000Z</published>
-    <updated>2018-11-29T14:12:34.360Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;一、元素水平居中&quot;&gt;&lt;a href=&quot;#一、元素水平居中&quot; class=&quot;headerlink&quot; title=&quot;一、元素水平居中&quot;&gt;&lt;/a&gt;一、元素水平居中&lt;/h1&gt;&lt;h3 id=&quot;1、text-align实现水平居中&quot;&gt;&lt;a href=&quot;#1、text-align实现水平居中&quot; class=&quot;headerlink&quot; title=&quot;1、text-align实现水平居中&quot;&gt;&lt;/a&gt;1、&lt;code&gt;text-align&lt;/code&gt;实现水平居中&lt;/h3&gt;&lt;p&gt;&lt;code&gt;text-align:center;&lt;/code&gt; 行内元素（图片或文字）居中&lt;br&gt;在父元素上设置&lt;code&gt;text-align: center&lt;/code&gt; 使文字/图片在整个页面上水平居中&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt; .container&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    text-align:center;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="css" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/css/"/>
-    
-    
-      <category term="css" scheme="http://yoursite.com/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS学习笔记（五）：BFC和边距合并</title>
-    <link href="http://yoursite.com/2018/11/10/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89%EF%BC%9ABFC%E5%92%8C%E8%BE%B9%E8%B7%9D%E5%90%88%E5%B9%B6/"/>
-    <id>http://yoursite.com/2018/11/10/CSS学习笔记（五）：BFC和边距合并/</id>
-    <published>2018-11-10T06:52:20.000Z</published>
-    <updated>2018-11-26T11:46:58.044Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;一、BFC&quot;&gt;&lt;a href=&quot;#一、BFC&quot; class=&quot;headerlink&quot; title=&quot;一、BFC&quot;&gt;&lt;/a&gt;一、BFC&lt;/h1&gt;&lt;h3 id=&quot;1、定义：&quot;&gt;&lt;a href=&quot;#1、定义：&quot; class=&quot;headerlink&quot; title=&quot;1、定义：&quot;&gt;&lt;/a&gt;1、定义：&lt;/h3&gt;&lt;p&gt;先给一个官方的定义：（说的什么东西反正我没看懂）&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Formatting context(格式化上下文)是W3CCSS2.1规范中的一个概念。每个渲染区域用formattingContext表示，它是页面中的一块渲染区域，并且有一套渲染规则。它决定了其子元素将如何定位，以及和其他元素的关系和相互作用&lt;br&gt;
-    
-    </summary>
-    
-      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="css" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/css/"/>
-    
-    
-      <category term="css" scheme="http://yoursite.com/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS学习笔记（四）：浮动和定位</title>
-    <link href="http://yoursite.com/2018/11/09/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E6%B5%AE%E5%8A%A8%E5%92%8C%E5%AE%9A%E4%BD%8D/"/>
-    <id>http://yoursite.com/2018/11/09/CSS学习笔记（四）：浮动和定位/</id>
-    <published>2018-11-09T07:32:12.000Z</published>
-    <updated>2018-11-26T11:46:45.770Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;自我总结：&quot;&gt;&lt;a href=&quot;#自我总结：&quot; class=&quot;headerlink&quot; title=&quot;自我总结：&quot;&gt;&lt;/a&gt;自我总结：&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;浮动是实现布局的一种常见方式&lt;/p&gt;
-&lt;/blockquote&gt;
     
     </summary>
     
