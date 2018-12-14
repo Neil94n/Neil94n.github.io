@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-12T12:47:22.316Z</updated>
+  <updated>2018-12-14T14:15:43.587Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面对JavaScript吧！11DOM API</title>
+    <link href="http://yoursite.com/2018/12/11/%E9%9D%A2%E5%AF%B9JavaScript%E5%90%A7%EF%BC%8111DOM%20API/"/>
+    <id>http://yoursite.com/2018/12/11/面对JavaScript吧！11DOM API/</id>
+    <published>2018-12-11T06:21:17.000Z</published>
+    <updated>2018-12-14T14:15:43.587Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一、DOM&quot;&gt;&lt;a href=&quot;#一、DOM&quot; class=&quot;headerlink&quot; title=&quot;一、DOM&quot;&gt;&lt;/a&gt;一、DOM&lt;/h1&gt;&lt;h3 id=&quot;1、定义&quot;&gt;&lt;a href=&quot;#1、定义&quot; class=&quot;headerlink&quot; title=&quot;1、定义&quot;&gt;&lt;/a&gt;1、定义&lt;/h3&gt;&lt;p&gt;DOM，即文档对象模型（Document Object Model ）&lt;/p&gt;
+&lt;h3 id=&quot;2、现象&quot;&gt;&lt;a href=&quot;#2、现象&quot; class=&quot;headerlink&quot; title=&quot;2、现象&quot;&gt;&lt;/a&gt;2、现象&lt;/h3&gt;&lt;p&gt;通过在页面——打开：检查元素——看见：元素为可折叠。可选中页面对应元素，事实上即选择了对象（即也选择了对象对应的属性或方法），相当于把页面文档对象化。事实上，就是用js手段调用操作该文档（即一个对象）。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>面对JavaScript吧！10数组</title>
@@ -445,28 +468,6 @@
       &lt;h1 id=&quot;一、两种布局使用分析&quot;&gt;&lt;a href=&quot;#一、两种布局使用分析&quot; class=&quot;headerlink&quot; title=&quot;一、两种布局使用分析&quot;&gt;&lt;/a&gt;一、两种布局使用分析&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;float布局（定宽布局）&lt;/li&gt;
 &lt;li&gt;flex布局（弹性布局）
-    
-    </summary>
-    
-      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="css" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/css/"/>
-    
-    
-      <category term="css" scheme="http://yoursite.com/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS学习笔记（七）：布局基础</title>
-    <link href="http://yoursite.com/2018/11/12/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%83%EF%BC%89%EF%BC%9A%E5%B8%83%E5%B1%80%E5%9F%BA%E7%A1%80/"/>
-    <id>http://yoursite.com/2018/11/12/CSS学习笔记（七）：布局基础/</id>
-    <published>2018-11-12T11:31:16.000Z</published>
-    <updated>2018-11-26T11:47:33.925Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;一、什么是布局&quot;&gt;&lt;a href=&quot;#一、什么是布局&quot; class=&quot;headerlink&quot; title=&quot;一、什么是布局&quot;&gt;&lt;/a&gt;一、什么是布局&lt;/h1&gt;&lt;h3 id=&quot;1、现有的布局满足不了人们的需求&quot;&gt;&lt;a href=&quot;#1、现有的布局满足不了人们的需求&quot; class=&quot;headerlink&quot; title=&quot;1、现有的布局满足不了人们的需求&quot;&gt;&lt;/a&gt;1、现有的布局满足不了人们的需求&lt;/h3&gt;&lt;p&gt;文档流、浮动、定位&lt;br&gt;
     
     </summary>
     
